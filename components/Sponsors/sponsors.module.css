@@ -1,0 +1,19 @@
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 20px;
+  margin-top: var(--section--margin--40);
+  margin-bottom: var(--section--margin--60);
+}
+.sponsor_img {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.sponsors_list {
+  align-items: center;
+  justify-content: center;
+}
+.sponsors_list span {
+  color: white;
+}

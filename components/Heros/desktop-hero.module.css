@@ -1,0 +1,68 @@
+.container {
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
+  background-color: #252525;
+  padding: 40px;
+  margin-top: 40px;
+  border-radius: 12px;
+}
+.hero_text {
+  background-image: url("/Red_Dot.png");
+  background-repeat: no-repeat;
+}
+.hero_text h1 {
+  font-family: var(--font--family--Bebas);
+  font-size: var(--Display--h1--size);
+  line-height: var(--line-height-h1);
+  letter-spacing: 5px;
+  color: white;
+  margin: 0;
+}
+.hero_text h2 {
+  font-family: var(--font--family--Bebas);
+  font-size: var(--Display--h2--size);
+  line-height: var(--line-height-h2);
+  color: white;
+  letter-spacing: 10px;
+}
+.hero_text h3 {
+  font-family: var(--font--family--Bebas);
+  font-size: var(--Display--h3--size);
+  line-height: var(--line-height-h3);
+  color: white;
+  letter-spacing: 5px;
+}
+.btn_join {
+  font-size: 1.5rem;
+  padding: 10px 60px 10px 60px;
+  margin-top: var(--margin--16);
+  background-color: var(--btn-red-color);
+  border: none;
+  cursor: pointer;
+  color: white;
+  font-family: var(--font--family--inter);
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 959px) {
+  .hero_text {
+    order: 2;
+  }
+  .hero_image {
+    order: 1;
+  }
+}
+@media only screen and (max-width: 960px) {
+  .hero_text h1 {
+    display: none;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .hero_text h1 {
+    display: none;
+  }
+  .hero_text h2 {
+    margin-top: var(--margin--16);
+  }
+}
