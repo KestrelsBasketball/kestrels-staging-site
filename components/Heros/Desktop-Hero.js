@@ -17,6 +17,7 @@ export default function DesktopHero() {
             <img
               src="/Hero_img_1400.png"
               srcSet="
+              /Hero_img_650.png 425w,
               /Hero_img_650.png 650w,
               /Hero_img_959.png 960w,
               /Hero_img_1400.png 1400w
