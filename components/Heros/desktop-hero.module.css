@@ -66,3 +66,10 @@
     margin-top: var(--margin--16);
   }
 }
+@media only screen and (max-width: 425px) {
+  .container {
+    width: 92vw;
+    margin: 0 auto;
+    padding: 20px;
+  }
+}

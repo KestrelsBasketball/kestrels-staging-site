@@ -101,8 +101,8 @@ a {
 }
 @media only screen and (max-width: 425px) {
   :root {
-    --Display--h2--size: 3.5rem;
-    --line-height-h2: 4rem;
+    --Display--h2--size: 3rem;
+    --line-height-h2: 3rem;
 
     --Display--h3--size: 2rem;
     --line-height-h3: 2rem;
