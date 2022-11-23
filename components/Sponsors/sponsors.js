@@ -39,7 +39,7 @@ export default function Sponsors() {
             />
           </Grid>
           <Grid xs={12} sm={9} md={9} className={styles.sponsors_list}>
-            <Row gap={2}>
+            <Row gap={1}>
               {sponsors.map((sponsor) => {
                 return (
                   <Col justify="center" align="center" key={sponsor.id}>

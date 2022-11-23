@@ -15,9 +15,6 @@ export default function Home() {
       <div>
         <DesktopHero />
       </div>
-      <div>
-        <Sponsors />
-      </div>
     </div>
   );
 }
