@@ -76,4 +76,8 @@
     margin: 0 auto;
     padding: 20px;
   }
+  .container {
+    margin-top: var(--margin--16);
+    padding-bottom: 50px;
+  }
 }

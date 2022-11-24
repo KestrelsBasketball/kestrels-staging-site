@@ -15,6 +15,7 @@ export default function DesktopHero() {
           </Grid>
           <Grid xs={12} sm={6} md={6} className={styles.hero_image}>
             <Image
+              showSkeleton
               src="/Hero_img.png"
               alt="Kestrels Graphic"
               className={styles.hero_img}
