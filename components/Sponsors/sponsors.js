@@ -32,9 +32,8 @@ export default function Sponsors() {
         <Grid.Container>
           <Grid xs={12} sm={3} md={3} className={styles.sponsor_img}>
             <Image
+              showSkeleton
               src="https://res.cloudinary.com/dk5prkqtv/image/upload/v1669219110/site/Sponsors_svvyrt.png"
-              width={300}
-              height={130}
               alt="sponsor graphic"
             />
           </Grid>
@@ -45,9 +44,8 @@ export default function Sponsors() {
                   <Col justify="center" align="center" key={sponsor.id}>
                     <div>
                       <Image
+                        showSkeleton
                         src={sponsor.Image}
-                        width={120}
-                        height={50}
                         alt={sponsor.Name}
                       />
                     </div>
