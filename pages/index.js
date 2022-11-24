@@ -3,6 +3,7 @@ import Image from "next/image";
 import styles from "../styles/Home.module.css";
 import DesktopHero from "@/components/Heros/Desktop-Hero";
 import Sponsors from "@/components/Sponsors/sponsors";
+import Fixtures from "@/components/Fixtures/Fixtures-Limited";
 
 export default function Home() {
   return (
@@ -17,6 +18,9 @@ export default function Home() {
       </div>
       <div>
         <Sponsors />
+      </div>
+      <div>
+        <Fixtures />
       </div>
     </div>
   );

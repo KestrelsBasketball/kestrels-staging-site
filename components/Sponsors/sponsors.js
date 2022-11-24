@@ -33,8 +33,8 @@ export default function Sponsors() {
           <Grid xs={12} sm={3} md={3} className={styles.sponsor_img}>
             <Image
               showSkeleton
-              src="https://res.cloudinary.com/dk5prkqtv/image/upload/v1669219110/site/Sponsors_svvyrt.png"
-              alt="sponsor graphic"
+              src="https://res.cloudinary.com/dk5prkqtv/image/upload/v1669298046/site/Sponsors_graphic_rdpani.png"
+              alt="sponsors graphic"
             />
           </Grid>
           <Grid xs={12} sm={9} md={9} className={styles.sponsors_list}>
@@ -46,6 +46,7 @@ export default function Sponsors() {
                       <Image
                         showSkeleton
                         src={sponsor.Image}
+                        height={50}
                         alt={sponsor.Name}
                       />
                     </div>
