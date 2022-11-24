@@ -14,17 +14,7 @@ export default function DesktopHero() {
             </div>
           </Grid>
           <Grid xs={12} sm={6} md={6} className={styles.hero_image}>
-            <img
-              src="/Hero_img_1400.png"
-              srcSet="
-              /Hero_img_650.png 425w,
-              /Hero_img_650.png 500w,
-              /Hero_img_650.png 650w,
-              /Hero_img_959.png 960w,
-              /Hero_img_1400.png 1400w
-              "
-              alt="Kestrel Basketball Club, Ireland"
-            />
+            <Image src="/Hero_img_1400.png" width={690} height={500} />
           </Grid>
         </Grid.Container>
       </div>
