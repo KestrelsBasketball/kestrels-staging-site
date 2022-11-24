@@ -14,7 +14,11 @@ export default function DesktopHero() {
             </div>
           </Grid>
           <Grid xs={12} sm={6} md={6} className={styles.hero_image}>
-            <Image src="/Hero_img_1400.png" width={690} height={500} />
+            <Image
+              src="/Hero_img_1400.png"
+              alt="Kestrels Graphic"
+              className={styles.hero_img}
+            />
           </Grid>
         </Grid.Container>
       </div>
