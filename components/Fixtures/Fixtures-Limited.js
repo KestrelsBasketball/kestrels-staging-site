@@ -88,7 +88,7 @@ export default function FixturesLimited() {
           >
             {fixturesLimited.map((fixture) => {
               return (
-                <SwiperSlide>
+                <SwiperSlide key={fixture.id}>
                   <div className={styles.carousel_card}>
                     <div className={styles.carousel_teams}>
                       <div>
