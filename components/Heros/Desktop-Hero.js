@@ -20,6 +20,12 @@ export default function DesktopHero() {
               alt="Kestrels Graphic"
               className={styles.hero_img}
             />
+            <Image
+              showSkeleton
+              src="https://res.cloudinary.com/dk5prkqtv/image/upload/v1669399975/site/Hero_Mobile_B_dzwnjs.png"
+              alt="Kestrels Graphic"
+              className={styles.hero_mobile_img}
+            />
           </Grid>
         </Grid.Container>
       </div>

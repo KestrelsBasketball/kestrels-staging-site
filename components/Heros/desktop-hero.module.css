@@ -44,7 +44,9 @@
   font-family: var(--font--family--inter);
   font-weight: 600;
 }
-
+.hero_mobile_img {
+  display: none;
+}
 @media only screen and (max-width: 959px) {
   .hero_text {
     order: 2;
@@ -68,6 +70,12 @@
   }
   .hero_text h2 {
     margin-top: var(--margin--16);
+  }
+  .hero_img {
+    display: none;
+  }
+  .hero_mobile_img {
+    display: block;
   }
 }
 @media only screen and (max-width: 425px) {
