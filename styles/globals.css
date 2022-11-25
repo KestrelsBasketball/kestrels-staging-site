@@ -4,8 +4,8 @@ body {
   margin: 0;
   background-color: var(--background-color) !important;
   background-image: url(https://res.cloudinary.com/dk5prkqtv/image/upload/v1669142532/site/Four_sq_texture_vr8sse.png);
+  font-family: var(--font--family--inter) !important;
 }
-@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 
 @font-face {
   font-family: "bebas_neueregular";
@@ -14,6 +14,7 @@ body {
   font-weight: normal;
   font-style: normal;
 }
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap");
 a {
   color: inherit;
   text-decoration: none;
@@ -41,6 +42,7 @@ a {
   --background-color: #1c1c1c;
   --btn-red-color: #e90d0d;
   --text-off-white: #f7f7f8;
+  --text-grey--: #2e2f30;
 
   /*-------Space Margins-------*/
   --section--margin--150: 150px;

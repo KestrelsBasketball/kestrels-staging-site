@@ -82,9 +82,11 @@ export default function FixturesLimited() {
             <span>VS</span>
             <h3>Kildare Gliders BC</h3>
             <div className={styles.divider}></div>
-            <h4>Colaiste losagain, Portarlington</h4>
-            <h5>Friday 18 November 2022</h5>
-            <p>19:30</p>
+            <div className={styles.game_details_mobile}>
+              <h4>Colaiste losagain, Portarlington</h4>
+              <h4>Friday 18 November 2022</h4>
+              <p>19:30</p>
+            </div>
           </div>
         </div>
       </div>

@@ -28,6 +28,7 @@
   align-content: center;
   justify-content: space-between;
   padding: 0 15px 0 15px;
+  color: var(--text-grey--);
 }
 .teams h5 {
   font-size: 1.2rem;
@@ -42,6 +43,9 @@
   display: flex;
   justify-items: center;
   align-content: center;
+  font-weight: 700;
+  font-size: 1.5rem;
+  line-height: 1em;
 }
 .game_details {
   display: flex;
@@ -77,29 +81,46 @@
     background-color: #252525;
     border-radius: 8px;
     margin-bottom: var(--margin--24);
+    border: 1px solid #333333;
   }
   .mobile_card_styles {
     text-align: center;
     color: var(--text-off-white);
-    font-family: var(--font--family--inter);
+    font-family: var(--font--family--inter) !important;
   }
   .mobile_card_styles h6 {
     font-weight: 500;
     font-size: 1.25rem;
+    margin-bottom: var(--margin--16);
   }
   .mobile_card_styles h3 {
     font-weight: 600;
-    font-size: 2.5rem;
-    line-height: 3rem;
+    font-size: 2rem;
+    line-height: 2rem;
+    margin-top: var(--margin--16);
+    margin-bottom: var(--margin--16);
   }
   .mobile_card_styles span {
-    font-size: 3rem;
-    line-height: 3rem;
+    font-size: 2.5rem;
+    line-height: 2rem;
     font-weight: 700;
   }
   .divider {
-    border: 1px solid #7d7d7d;
+    border: 1px solid #3b3b3b;
     margin-top: 16px;
+  }
+  .mobile_card_styles h4 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    margin-top: var(--margin--8);
+    margin-bottom: var(--margin--8);
+  }
+  .game_details_mobile {
+    margin-top: var(--margin--16);
+  }
+  .game_details_mobile p {
+    font-size: 1.2rem;
+    font-weight: 700;
   }
 }
 @media only screen and (max-width: 425px) {
