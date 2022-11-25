@@ -62,6 +62,24 @@
   .hero_text h1 {
     display: none;
   }
+  .hero_text h2 {
+    font-size: 8rem;
+    letter-spacing: 14px;
+    margin-top: var(--margin--24);
+    margin-bottom: var(--margin--24);
+  }
+  .hero_img {
+    display: none;
+  }
+  .hero_mobile_img {
+    display: block;
+  }
+  .hero_text h2 {
+    font-size: 8rem;
+    letter-spacing: 14px;
+    margin-top: var(--margin--40);
+    margin-bottom: var(--margin--24);
+  }
 }
 @media only screen and (max-width: 768px) {
   .container {
