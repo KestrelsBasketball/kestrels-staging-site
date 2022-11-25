@@ -65,7 +65,7 @@
 .carousel_card {
   background-color: #333333;
   border-radius: 8px;
-  padding: 30px;
+  padding: 20px;
 }
 .carousel_teams {
   display: flex;
@@ -78,22 +78,49 @@
 }
 .carousel_teams h6 {
   font-weight: 500;
-  font-size: 1.3rem;
+  font-size: 1rem;
+  line-height: 1.1rem;
+  margin: 0;
 }
-.carousel_teams span {
+.carousel_teams h3 {
   font-weight: 700;
   font-size: 2rem;
+  margin: 0;
 }
 .carousel_teams h5 {
-  font-size: 2rem;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
   letter-spacing: 1px;
+  margin-bottom: var(--margin--8);
+  margin-top: var(--margin--8);
 }
 .game_details {
   display: flex;
   align-items: center;
   align-content: center;
   flex-direction: column;
+  color: var(--text-off-white);
   margin-top: var(--margin--16);
+}
+.game_details h4 {
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.25rem;
+  margin-top: var(--margin--4);
+  margin-bottom: var(--margin--4);
+}
+.game_details h5 {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: var(--margin--4);
+  margin-bottom: var(--margin--4);
+}
+.game_details h6 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+  margin-top: var(--margin--4);
+  margin-bottom: var(--margin--16);
 }
 @media only screen and (max-width: 1080px) {
   .fixture_Card {

@@ -1,6 +1,7 @@
 import styles from "./fixtures.module.css";
 import { Grid } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
@@ -84,7 +85,9 @@ export default function FixturesLimited() {
           <Swiper
             spaceBetween={50}
             slidesPerView={1}
-            pagination={{ clickable: true }}
+            pagination={{ clickable: true, dynamicBullets: true }}
+            modules={[Pagination]}
+            className="mySwiper"
           >
             {fixturesLimited.map((fixture) => {
               return (
@@ -98,7 +101,7 @@ export default function FixturesLimited() {
                         <h5>{fixture.TeamA}</h5>
                       </div>
                       <div>
-                        <span>VS</span>
+                        <h3>VS</h3>
                       </div>
                       <div>
                         <h5>{fixture.TeamB}</h5>
@@ -106,9 +109,15 @@ export default function FixturesLimited() {
                     </div>
                     <hr className={styles.solid}></hr>
                     <div className={styles.game_details}>
-                      <div>AA</div>
-                      <div>BB</div>
-                      <div>CC</div>
+                      <div>
+                        <h4>{fixture.Location}</h4>
+                      </div>
+                      <div>
+                        <h5>{fixture.Date}</h5>
+                      </div>
+                      <div>
+                        <h6>{fixture.Time}</h6>
+                      </div>
                     </div>
                   </div>
                 </SwiperSlide>
