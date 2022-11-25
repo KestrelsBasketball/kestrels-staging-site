@@ -1,131 +1,115 @@
 .container {
+  width: 90vw;
+  margin: 0 auto;
+  margin-bottom: 100px;
+}
+.fixture_graphic_container {
   display: flex;
-  width: 90vw;
-  height: 50vh;
-  margin: 0 auto;
+  height: 10vh;
+  background-color: lightcyan;
 }
-.fixtures_layout_mobile {
-  width: 90vw;
+.fixture_Card {
+  width: 52vw;
+  height: 72px;
   margin: 0 auto;
-  color: white;
-  display: none;
-}
-.teams_container {
-  width: 50vw;
-  height: 70px;
+  align-items: center;
+  align-content: center;
   border-radius: 8px;
+  font-family: var(--font--family--inter);
+  color: var(--text-grey--);
   background-color: white;
+  margin-bottom: var(--margin--48);
 }
-.teams_container h6 {
+.fixture_tournament_title h6 {
+  font-size: 1rem;
+  line-height: 1rem;
+  padding-top: 7px;
   text-align: center;
   margin: 0;
-  padding-top: var(--margin--4);
 }
-
 .teams {
   display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 15px 0 15px;
+}
+
+.teams h5 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  min-width: 220px;
+  margin: 0;
+}
+.teams span {
+  font-weight: 700;
+  font-size: 1.2rem;
+}
+.h5_left_align {
+  text-align: right;
+}
+
+.game_details_container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  padding: 0 15px 0 15px;
+  color: white;
+}
+.fixtures_carousel_container {
+  display: none;
+}
+.solid {
+  border-top: 1px solid #bbb;
+}
+/*---------Carousel Card-------*/
+.carousel_card {
+  background-color: #333333;
+  border-radius: 8px;
+  padding: 30px;
+}
+.carousel_teams {
+  display: flex;
+  flex-direction: column;
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  padding: 0 15px 0 15px;
-  color: var(--text-grey--);
+  color: var(--text-off-white);
+  margin-bottom: var(--margin--16);
 }
-.teams h5 {
-  font-size: 1.2rem;
-  min-width: 240px;
-  margin-bottom: 0;
-  font-family: var(--font--family--inter);
+.carousel_teams h6 {
+  font-weight: 500;
+  font-size: 1.3rem;
 }
-.h5_last {
-  text-align: right;
-}
-.teams span {
-  display: flex;
-  justify-items: center;
-  align-content: center;
+.carousel_teams span {
   font-weight: 700;
-  font-size: 1.5rem;
-  line-height: 1em;
+  font-size: 2rem;
+}
+.carousel_teams h5 {
+  font-size: 2rem;
+  letter-spacing: 1px;
 }
 .game_details {
   display: flex;
-  justify-content: space-between;
-  padding: 5px 15px 0 15px;
-  color: white;
-  font-size: 1rem;
+  align-items: center;
+  align-content: center;
+  flex-direction: column;
+  margin-top: var(--margin--16);
+}
+@media only screen and (max-width: 1080px) {
+  .fixture_Card {
+    width: 58vw;
+  }
 }
 @media only screen and (max-width: 960px) {
-  .teams_container {
-    width: 90vw;
+  .fixture_Card {
+    width: 80vw;
   }
 }
 @media only screen and (max-width: 650px) {
-  .teams h5 {
-    font-size: 1rem;
-    min-width: 100px;
-  }
-  .game_details {
-    font-size: 12px;
-  }
-  .container {
+  .fixtures_deskop_layout {
     display: none;
   }
-  /*------- Fixture Mobile styles------*/
-  .fixtures_layout_mobile {
+  .fixtures_carousel_container {
     display: block;
-  }
-  .fixture_card_mobile {
-    width: 90vw;
-    margin: 0 auto;
-    padding: 30px;
-    background-color: #252525;
-    border-radius: 8px;
-    margin-bottom: var(--margin--24);
-    border: 1px solid #333333;
-  }
-  .mobile_card_styles {
-    text-align: center;
-    color: var(--text-off-white);
-    font-family: var(--font--family--inter) !important;
-  }
-  .mobile_card_styles h6 {
-    font-weight: 500;
-    font-size: 1.25rem;
-    margin-bottom: var(--margin--16);
-  }
-  .mobile_card_styles h3 {
-    font-weight: 600;
-    font-size: 2rem;
-    line-height: 2rem;
-    margin-top: var(--margin--16);
-    margin-bottom: var(--margin--16);
-  }
-  .mobile_card_styles span {
-    font-size: 2.5rem;
-    line-height: 2rem;
-    font-weight: 700;
-  }
-  .divider {
-    border: 1px solid #3b3b3b;
-    margin-top: 16px;
-  }
-  .mobile_card_styles h4 {
-    font-size: 1.2rem;
-    line-height: 1.2rem;
-    margin-top: var(--margin--8);
-    margin-bottom: var(--margin--8);
-  }
-  .game_details_mobile {
-    margin-top: var(--margin--16);
-  }
-  .game_details_mobile p {
-    font-size: 1.2rem;
-    font-weight: 700;
-  }
-}
-@media only screen and (max-width: 425px) {
-  .teams h5 {
-    font-size: 1rem;
-    min-width: 100px;
   }
 }
