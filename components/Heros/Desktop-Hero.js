@@ -22,7 +22,7 @@ export default function DesktopHero() {
             />
             <Image
               showSkeleton
-              src="https://res.cloudinary.com/dk5prkqtv/image/upload/v1669399975/site/Hero_Mobile_B_dzwnjs.png"
+              src="https://res.cloudinary.com/dk5prkqtv/image/upload/v1669402488/site/Hero_Mobile_ver_2_ypjsqr.png"
               alt="Kestrels Graphic"
               className={styles.hero_mobile_img}
             />

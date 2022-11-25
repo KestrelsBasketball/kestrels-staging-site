@@ -69,7 +69,9 @@
     display: none;
   }
   .hero_text h2 {
-    margin-top: var(--margin--16);
+    font-size: 4.2rem;
+    margin-top: var(--margin--24);
+    margin-bottom: var(--margin--16);
   }
   .hero_img {
     display: none;
