@@ -63,15 +63,26 @@
     display: none;
   }
 }
-
+@media only screen and (max-width: 768px) {
+  .container {
+    padding-bottom: 80px;
+  }
+  .hero_text h2 {
+    font-size: 8rem;
+    letter-spacing: 14px;
+    margin-top: var(--margin--24);
+    margin-bottom: var(--margin--24);
+  }
+}
 @media only screen and (max-width: 650px) {
   .hero_text h1 {
     display: none;
   }
   .hero_text h2 {
-    font-size: 4.2rem;
-    margin-top: var(--margin--24);
-    margin-bottom: var(--margin--16);
+    font-size: 7rem;
+    letter-spacing: 10px;
+    margin-top: var(--margin--40);
+    margin-bottom: var(--margin--24);
   }
   .hero_img {
     display: none;
@@ -89,5 +100,10 @@
   .container {
     margin-top: var(--margin--16);
     padding-bottom: 50px;
+  }
+  .hero_text h2 {
+    font-size: 4.2rem;
+    margin-top: var(--margin--24);
+    margin-bottom: var(--margin--16);
   }
 }
