@@ -78,6 +78,9 @@
   .hero_text h1 {
     display: none;
   }
+  .hero_text {
+    background-image: none;
+  }
   .hero_text h2 {
     font-size: 7rem;
     letter-spacing: 10px;
@@ -89,6 +92,10 @@
   }
   .hero_mobile_img {
     display: block;
+  }
+  .btn_join {
+    font-size: 1.3rem;
+    padding: 10px 40px 10px 40px;
   }
 }
 @media only screen and (max-width: 425px) {
@@ -102,7 +109,7 @@
     padding-bottom: 50px;
   }
   .hero_text h2 {
-    font-size: 4.2rem;
+    font-size: 4.1rem;
     margin-top: var(--margin--24);
     margin-bottom: var(--margin--16);
   }
