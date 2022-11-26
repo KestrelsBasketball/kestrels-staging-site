@@ -172,6 +172,8 @@
     font-size: 4rem;
     line-height: 3rem;
     letter-spacing: 8px;
+    -webkit-text-stroke-width: 1.5px;
+    -webkit-text-stroke-color: #f60909;
   }
   .fixtures_deskop_layout {
     display: none;
