@@ -1,5 +1,5 @@
 import styles from "./fixtures.module.css";
-import { Grid } from "@nextui-org/react";
+import { Grid, Image } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper";
 import "swiper/css";
@@ -42,8 +42,13 @@ export default function FixturesLimited() {
     <div>
       <div className={styles.container}>
         <Grid.Container>
-          <Grid xs={12} sm={4} md={4}>
-            <div className={styles.fixture_graphic_container}>ss</div>
+          <Grid xs={12} sm={4} md={4} justify="center">
+            <div className={styles.fixture_graphic_container_desktop}>
+              <div>
+                <h4>Upcoming</h4>
+                <h3>Fixtures</h3>
+              </div>
+            </div>
           </Grid>
           <Grid xs={12} sm={8} md={8} justify="center">
             <div className={styles.fixtures_deskop_layout}>
