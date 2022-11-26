@@ -12,6 +12,9 @@
   background-color: white;
   margin-bottom: var(--margin--24);
 }
+.results_desktop_container ul {
+  margin: 0;
+}
 .Tournament_title h6 {
   font-size: 1rem;
   line-height: 1rem;
@@ -34,6 +37,9 @@
   min-width: 240px;
   margin: 0;
 }
+.align_left h5 {
+  text-align: right;
+}
 .scores {
   display: flex;
   align-items: center;
@@ -55,5 +61,14 @@
   .results_container h5 {
     font-size: 1rem;
     min-width: 140px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .results_container h5 {
+    font-size: 0.8rem;
+    min-width: 100px;
+  }
+  .Tournament_title h6 {
+    font-size: 0.8rem;
   }
 }

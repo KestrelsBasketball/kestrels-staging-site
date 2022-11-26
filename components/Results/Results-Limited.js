@@ -54,7 +54,7 @@ export default function ResultsLimited() {
                             <h4>-</h4>
                             <h4>{results.TeamScoreB}</h4>
                           </div>
-                          <div>
+                          <div className={styles.align_left}>
                             <h5>{results.TeamB}</h5>
                           </div>
                         </div>
