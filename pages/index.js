@@ -4,6 +4,7 @@ import styles from "../styles/Home.module.css";
 import DesktopHero from "@/components/Heros/Desktop-Hero";
 import Sponsors from "@/components/Sponsors/sponsors";
 import Fixtures from "@/components/Fixtures/Fixtures-Limited";
+import ResultsLimited from "@/components/Results/Results-Limited";
 
 export default function Home() {
   return (
@@ -21,6 +22,9 @@ export default function Home() {
       </div>
       <div>
         <Fixtures />
+      </div>
+      <div>
+        <ResultsLimited />
       </div>
     </div>
   );

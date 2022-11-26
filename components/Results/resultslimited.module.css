@@ -1,0 +1,59 @@
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  height: 40vh;
+}
+.result_card {
+  width: 52vw;
+  height: 70px;
+  align-items: center;
+  align-content: center;
+  border-radius: 8px;
+  background-color: white;
+  margin-bottom: var(--margin--24);
+}
+.Tournament_title h6 {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-grey--);
+  padding-top: var(--margin--4);
+  margin-bottom: var(--margin--4);
+}
+.results_container {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  justify-content: space-between;
+  padding: 0 15px 0 15px;
+}
+.results_container h5 {
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  min-width: 240px;
+  margin: 0;
+}
+.scores {
+  display: flex;
+  align-items: center;
+  align-content: center;
+  flex-direction: row;
+}
+.scores h4 {
+  font-size: 1.5rem;
+  line-height: 1.2rem;
+  font-weight: 600;
+  color: pink;
+  margin-top: 5px;
+  padding: 0 5px 0 5px;
+}
+@media only screen and (max-width: 650px) {
+  .result_card {
+    width: 90vw;
+  }
+  .results_container h5 {
+    font-size: 1rem;
+    min-width: 140px;
+  }
+}
