@@ -36,9 +36,10 @@
   line-height: 1.2rem;
   min-width: 240px;
   margin: 0;
+  text-align: right;
 }
 .align_left h5 {
-  text-align: right;
+  text-align: left !important;
 }
 .scores {
   display: flex;
@@ -47,12 +48,21 @@
   flex-direction: row;
 }
 .scores h4 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  justify-content: center;
   font-size: 1.5rem;
   line-height: 1.2rem;
   font-weight: 600;
   color: pink;
-  margin-top: 5px;
+  margin-top: 7px;
   padding: 0 5px 0 5px;
+}
+@media only screen and (max-width: 960px) {
+  .result_card {
+    width: 90vw;
+  }
 }
 @media only screen and (max-width: 650px) {
   .result_card {
@@ -60,7 +70,7 @@
   }
   .results_container h5 {
     font-size: 1rem;
-    min-width: 140px;
+    min-width: 210px;
   }
 }
 @media only screen and (max-width: 425px) {
