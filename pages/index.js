@@ -5,7 +5,7 @@ import DesktopHero from "@/components/Heros/Desktop-Hero";
 import Sponsors from "@/components/Sponsors/sponsors";
 import Fixtures from "@/components/Fixtures/Fixtures-Limited";
 import ResultsLimited from "@/components/Results/Results-Limited";
-
+import Douments from "@/components/Documents/Douments";
 export default function Home() {
   return (
     <div>
@@ -25,6 +25,9 @@ export default function Home() {
       </div>
       <div>
         <ResultsLimited />
+      </div>
+      <div>
+        <Douments />
       </div>
     </div>
   );

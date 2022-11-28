@@ -180,6 +180,7 @@
     text-align: center;
     font-size: 5rem;
     line-height: 4rem;
+    -webkit-text-stroke-width: 1.5px;
   }
   .latest_heading h3 {
     text-align: center;
