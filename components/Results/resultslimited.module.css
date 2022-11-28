@@ -1,7 +1,9 @@
 .container {
   width: 90vw;
   margin: 0 auto;
-  height: 40vh;
+}
+.results_mobile_container {
+  display: none;
 }
 .result_card {
   width: 52vw;
@@ -36,7 +38,7 @@
   line-height: 1.2rem;
   min-width: 240px;
   margin: 0;
-  text-align: right;
+  text-align: left;
 }
 .align_left h5 {
   text-align: left !important;
@@ -59,30 +61,59 @@
   margin-top: 7px;
   padding: 0 5px 0 5px;
 }
+.results_mobile_container ul {
+  margin: 0;
+}
+.results_card_mobile {
+  width: 90vw;
+  margin: 0 auto;
+  padding: 10px 20px 10px 20px;
+  margin-bottom: 24px;
+  background-color: white;
+  border-radius: 8px;
+}
+.results_card_mobile h6 {
+  font-size: 0.9rem;
+  font-weight: 500;
+  text-align: center;
+  color: var(--text-grey--);
+  margin: 0;
+}
+.results_card_mobile h5 {
+  font-size: 1rem;
+  font-weight: 600;
+  color: var(--text-grey--);
+}
+.results_card_mobile hr {
+  border-color: bisque;
+}
+.Team_A {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: var(--margin--4);
+}
+.Team_A h5 {
+  margin: 0;
+}
+.Team_B {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: var(--margin--4);
+}
 @media only screen and (max-width: 960px) {
   .result_card {
     width: 90vw;
   }
 }
 @media only screen and (max-width: 650px) {
-  .result_card {
-    width: 90vw;
+  .results_desktop_container {
+    display: none;
   }
-  .results_container h5 {
-    font-size: 1rem;
-    min-width: 230px;
-  }
-  .scores h4 {
-    font-size: 1.2rem;
-    padding: 0 2px 0 2px;
+  .results_mobile_container {
+    display: flex;
   }
 }
 @media only screen and (max-width: 425px) {
-  .results_container h5 {
-    font-size: 1rem;
-    min-width: 50px;
-  }
-  .Tournament_title h6 {
-    font-size: 0.8rem;
-  }
 }

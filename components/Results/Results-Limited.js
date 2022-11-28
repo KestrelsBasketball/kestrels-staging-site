@@ -1,5 +1,5 @@
 import styles from "./resultslimited.module.css";
-import { Grid, Image } from "@nextui-org/react";
+import { Grid } from "@nextui-org/react";
 
 const resultsLimited = [
   {
@@ -56,6 +56,40 @@ export default function ResultsLimited() {
                           </div>
                           <div className={styles.align_left}>
                             <h5>{results.TeamB}</h5>
+                          </div>
+                        </div>
+                      </div>
+                    </li>
+                  );
+                })}
+              </ul>
+            </div>
+            <div className={styles.results_mobile_container}>
+              <ul>
+                {resultsLimited.map((results) => {
+                  return (
+                    <li key={results.id}>
+                      <div className={styles.results_card_mobile}>
+                        <div>
+                          <h6>{results.Tournament}</h6>
+                        </div>
+                        <div className={styles.Team_A}>
+                          <div>
+                            <h5>{results.TeamA}</h5>
+                          </div>
+                          <div>
+                            <h5>{results.TeamScoreA}</h5>
+                          </div>
+                        </div>
+                        <div>
+                          <hr></hr>
+                        </div>
+                        <div className={styles.Team_B}>
+                          <div>
+                            <h5>{results.TeamB}</h5>
+                          </div>
+                          <div>
+                            <h5>{results.TeamScoreB}</h5>
                           </div>
                         </div>
                       </div>
