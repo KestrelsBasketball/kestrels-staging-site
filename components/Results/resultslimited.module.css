@@ -102,6 +102,9 @@
   align-items: center;
   margin-top: var(--margin--4);
 }
+.Team_B h5 {
+  margin: 0;
+}
 @media only screen and (max-width: 960px) {
   .result_card {
     width: 90vw;
