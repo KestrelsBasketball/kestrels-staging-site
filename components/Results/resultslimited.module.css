@@ -1,9 +1,36 @@
 .container {
   width: 90vw;
   margin: 0 auto;
+  margin-top: var(--section--margin--150);
+  margin-bottom: var(--section--margin--150);
 }
 .results_mobile_container {
   display: none;
+}
+.latest_heading {
+  display: flex;
+  height: 260px;
+  align-content: flex-end;
+  flex-wrap: wrap;
+  text-align: center;
+}
+.latest_heading h3 {
+  font-size: 7rem;
+  line-height: 6.5rem;
+  letter-spacing: 6px;
+  color: white;
+  font-family: var(--font--family--Bebas);
+  margin: 0;
+}
+.latest_heading h4 {
+  font-size: 6rem;
+  line-height: 5rem;
+  letter-spacing: 8px;
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #f99705;
+  font-family: var(--font--family--Bebas);
+  text-align: left;
 }
 .result_card {
   width: 52vw;
@@ -13,6 +40,12 @@
   border-radius: 8px;
   background-color: white;
   margin-bottom: var(--margin--24);
+}
+.results_container_order {
+  order: 1;
+}
+.latast_container_order {
+  order: 2;
 }
 .results_desktop_container ul {
   margin: 0;
@@ -57,7 +90,7 @@
   font-size: 1.5rem;
   line-height: 1.2rem;
   font-weight: 600;
-  color: pink;
+  color: var(--text-grey--);
   margin-top: 7px;
   padding: 0 5px 0 5px;
 }
@@ -78,6 +111,9 @@
   text-align: center;
   color: var(--text-grey--);
   margin: 0;
+}
+.align_right h5 {
+  text-align: right;
 }
 .results_card_mobile h5 {
   font-size: 1rem;
@@ -105,9 +141,26 @@
 .Team_B h5 {
   margin: 0;
 }
+
+@media only screen and (max-width: 1280px) {
+  .results_container h5 {
+    min-width: 220px;
+  }
+}
+@media only screen and (max-width: 1060px) {
+  .results_container h5 {
+    min-width: 200px;
+  }
+}
 @media only screen and (max-width: 960px) {
   .result_card {
     width: 90vw;
+  }
+  .results_container_order {
+    order: 2;
+  }
+  .latast_container_order {
+    order: 1;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -116,6 +169,23 @@
   }
   .results_mobile_container {
     display: flex;
+  }
+  .results_container_order {
+    order: 2;
+  }
+  .latast_container_order {
+    order: 1;
+  }
+  .latest_heading h4 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 4rem;
+  }
+  .latest_heading h3 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 5rem;
+    margin-bottom: var(--margin--24);
   }
 }
 @media only screen and (max-width: 425px) {

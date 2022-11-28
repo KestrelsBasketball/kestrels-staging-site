@@ -1,11 +1,16 @@
 .container {
   width: 90vw;
   margin: 0 auto;
-  margin-bottom: 100px;
+  margin-top: var(--section--margin--150);
+  margin-bottom: var(--section--margin--150);
+}
+.fixtures_deskop_layout {
+  display: flex;
+  justify-content: flex-end;
 }
 .fixture_graphic_container_desktop {
   display: flex;
-  height: 340px;
+  height: 350px;
   align-content: flex-end;
   flex-wrap: wrap;
   text-align: center;
@@ -31,8 +36,6 @@
   width: 52vw;
   height: 72px;
   margin: 0 auto;
-  align-items: center;
-  align-content: center;
   border-radius: 8px;
   font-family: var(--font--family--inter);
   color: var(--text-grey--);
@@ -151,7 +154,7 @@
 }
 @media only screen and (max-width: 960px) {
   .fixture_Card {
-    width: 80vw;
+    width: 90vw;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -166,7 +169,7 @@
     font-size: 5rem;
     line-height: 4.5rem;
     letter-spacing: 6px;
-    margin-bottom: var(--margin--16);
+    margin-bottom: var(--margin--24);
   }
   .fixture_graphic_container_desktop h4 {
     font-size: 4rem;

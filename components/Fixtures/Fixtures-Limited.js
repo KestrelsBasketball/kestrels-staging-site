@@ -50,7 +50,7 @@ export default function FixturesLimited() {
               </div>
             </div>
           </Grid>
-          <Grid xs={12} sm={8} md={8} justify="center">
+          <Grid xs={12} sm={8} md={8} className={styles.fixtures_deskop_layout}>
             <div className={styles.fixtures_deskop_layout}>
               <ul>
                 {fixturesLimited.map((fixture) => {

@@ -32,10 +32,12 @@ export default function ResultsLimited() {
     <div>
       <div className={styles.container}>
         <Grid.Container>
-          <Grid xs={12} sm={4} md={4} justify="center">
-            AAAA
-          </Grid>
-          <Grid xs={12} sm={8} md={8} justify="center">
+          <Grid
+            xs={12}
+            sm={8}
+            md={8}
+            className={styles.results_container_order}
+          >
             <div className={styles.results_desktop_container}>
               <ul>
                 {resultsLimited.map((results) => {
@@ -54,7 +56,7 @@ export default function ResultsLimited() {
                             <h4>-</h4>
                             <h4>{results.TeamScoreB}</h4>
                           </div>
-                          <div className={styles.align_left}>
+                          <div className={styles.align_right}>
                             <h5>{results.TeamB}</h5>
                           </div>
                         </div>
@@ -97,6 +99,20 @@ export default function ResultsLimited() {
                   );
                 })}
               </ul>
+            </div>
+          </Grid>
+          <Grid
+            xs={12}
+            sm={4}
+            md={4}
+            justify="center"
+            className={styles.latast_container_order}
+          >
+            <div className={styles.latest_heading}>
+              <div>
+                <h4>latest</h4>
+                <h3>Results</h3>
+              </div>
             </div>
           </Grid>
         </Grid.Container>
