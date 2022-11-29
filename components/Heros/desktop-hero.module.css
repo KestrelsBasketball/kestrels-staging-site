@@ -81,6 +81,11 @@
     margin-bottom: var(--margin--24);
   }
 }
+@media only screen and (max-width: 960px) {
+  .container {
+    padding: 105px;
+  }
+}
 @media only screen and (max-width: 768px) {
   .container {
     padding-bottom: 80px;

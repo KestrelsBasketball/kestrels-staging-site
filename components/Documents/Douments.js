@@ -33,26 +33,34 @@ export default function Douments() {
             </div>
           </Grid>
         </Grid.Container>
-        {/* <Grid.Container>
-          <Row gap={2} className={styles.row_doc_container}>
-            <Col className={styles.col_doc_container}>
+        <Grid.Container>
+          <Grid xs={12} sm={6} md={6} className={styles.row_doc_container}>
+            <div className={styles.col_doc_container}>
               <div>
-                <h3>Mission</h3>
+                <h3>Club</h3>
               </div>
               <div>
-                <h4>Statement</h4>
+                <h4>Constitution</h4>
               </div>
               <div className={styles.btn_view_doc}>
                 <button>View</button>
               </div>
-            </Col>
-            <Col className={styles.col_doc_container}>BBBB</Col>
-          </Row>
-          <Row gap={2}>
-            <Col>CCCC</Col>
-            <Col>DDDD</Col>
-          </Row>
-        </Grid.Container> */}
+            </div>
+          </Grid>
+          <Grid xs={12} sm={6} md={6}>
+            <div className={styles.col_doc_container}>
+              <div>
+                <h3>Players</h3>
+              </div>
+              <div>
+                <h4>Code of Conduct</h4>
+              </div>
+              <div className={styles.btn_view_doc}>
+                <button>View</button>
+              </div>
+            </div>
+          </Grid>
+        </Grid.Container>
       </div>
     </div>
   );

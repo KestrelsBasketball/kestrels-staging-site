@@ -148,11 +148,20 @@
   }
 }
 @media only screen and (max-width: 1060px) {
+  .latest_heading h4 {
+    text-align: center;
+  }
   .results_container h5 {
     min-width: 200px;
   }
 }
 @media only screen and (max-width: 960px) {
+  .results_container h5 {
+    text-align: center;
+  }
+  .latest_heading h3 {
+    margin-bottom: var(--margin--24);
+  }
   .result_card {
     width: 90vw;
   }
