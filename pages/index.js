@@ -6,6 +6,7 @@ import Sponsors from "@/components/Sponsors/sponsors";
 import Fixtures from "@/components/Fixtures/Fixtures-Limited";
 import ResultsLimited from "@/components/Results/Results-Limited";
 import Douments from "@/components/Documents/Douments";
+import History from "@/components/Club-History/History";
 export default function Home() {
   return (
     <div>
@@ -28,6 +29,9 @@ export default function Home() {
       </div>
       <div>
         <Douments />
+      </div>
+      <div>
+        <History />
       </div>
     </div>
   );
