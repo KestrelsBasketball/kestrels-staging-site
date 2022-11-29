@@ -57,3 +57,15 @@
     line-height: 2rem;
   }
 }
+@media only screen and (max-width: 425px) {
+  .text_heading_img img {
+    width: 90vw;
+    margin: 0 auto;
+    height: 220px;
+  }
+  .text_content_styles h2 {
+    font-size: 2rem;
+    line-height: 2.5rem;
+    margin-top: 0;
+  }
+}
