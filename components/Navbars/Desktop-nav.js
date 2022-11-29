@@ -71,10 +71,10 @@ export default function Desktopnav() {
                     Documents
                   </Dropdown.Button>
                   <Dropdown.Menu css={{ borderRadius: "3px" }}>
-                    <Dropdown.Item>New file</Dropdown.Item>
-                    <Dropdown.Item>Copy link</Dropdown.Item>
-                    <Dropdown.Item>Edit file</Dropdown.Item>
-                    <Dropdown.Item>Delete file</Dropdown.Item>
+                    <Dropdown.Item>Doc one</Dropdown.Item>
+                    <Dropdown.Item>Doc Two</Dropdown.Item>
+                    <Dropdown.Item>Doc Three</Dropdown.Item>
+                    <Dropdown.Item>Doc Four</Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </li>
