@@ -25,16 +25,16 @@ export default function History() {
                 />
               </div>
               <div className={styles.text_content_styles}>
-                <h2>About Official Kestrel's Basketball Club</h2>
+                <h2>About Official Kestrels Basketball Club</h2>
                 <h5>
                   Kestrels was founded in 2007 and has been growing steadily
                   ever since, with 180 members at present.
                 </h5>
                 <p>
-                  Kestrels currently has teams from U8's up to U20's for both
-                  boys and girls, as well as a senior ladies team. Kestrels
-                  compete in the Midlands League competition, and we currently
-                  have our U17 and our U20 boys competing in the Dublin League.
+                  Kestrels currently has teams from U8s up to U20s for both boys
+                  and girls, as well as a senior ladies team. Kestrels compete
+                  in the Midlands League competition, and we currently have our
+                  U17 and our U20 boys competing in the Dublin League.
                 </p>
                 <p>
                   Anyone interested in becoming a member of any of the teams,
