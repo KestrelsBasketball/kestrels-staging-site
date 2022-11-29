@@ -20,6 +20,7 @@ export default function History() {
                 <Image
                   src="/Kestrel_History.png"
                   height={200}
+                  alt="Kestrel text graphic"
                   className={styles.text_heading_img}
                 />
               </div>
