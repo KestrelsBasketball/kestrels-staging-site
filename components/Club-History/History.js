@@ -25,7 +25,7 @@ export default function History() {
                 />
               </div>
               <div className={styles.text_content_styles}>
-                <h2>About Kestrels Basketball Club</h2>
+                <h2>Kestrels Basketball Club</h2>
                 <h5>
                   Kestrels was founded in 2007 and has been growing steadily
                   ever since, with 180 members at present.

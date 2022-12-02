@@ -50,10 +50,26 @@
   vertical-align: sub;
   padding-left: 10px;
 }
+@media only screen and (min-width: 1500px) {
+  .col_doc_container h4 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+  .col_doc_container h3 {
+    font-size: 6rem;
+    line-height: 6rem;
+  }
+}
 @media only screen and (max-width: 1170px) {
   .col_doc_container h4 {
     font-size: 4rem;
     line-height: 4rem;
+  }
+}
+@media only screen and (max-width: 1087px) {
+  .col_doc_container h4 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
   }
 }
 @media only screen and (max-width: 1050px) {

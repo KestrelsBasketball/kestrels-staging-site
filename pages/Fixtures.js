@@ -12,16 +12,75 @@ export default function Fixtures(props) {
         <ul>
           {fixtures.map((fixtures) => (
             <li key={fixtures.id}>
-              <div className={styles.fixture_container}>
-                <div>AAA</div>
-                <div>BBB</div>
-                <div>CCC</div>
+              <div>
+                <div className={styles.fixture_container}>
+                  <div>
+                    <h4>{fixtures.teamA}</h4>
+                  </div>
+                  <div className={styles.fixtures_values}>
+                    <div>
+                      <h6>{fixtures.tournament}</h6>
+                    </div>
+                    <div>
+                      <h5>VS</h5>
+                    </div>
+                  </div>
+                  <div>
+                    <h4 className={styles.align_right}>{fixtures.teamB}</h4>
+                  </div>
+                </div>
+                <div className={styles.fixtures_details}>
+                  <div>
+                    <h6>{fixtures.location}</h6>
+                  </div>
+                  <div>
+                    <h6>{fixtures.date}</h6>
+                  </div>
+                  <div>
+                    <h6>{fixtures.time}</h6>
+                  </div>
+                </div>
               </div>
             </li>
           ))}
         </ul>
       </div>
-      <div>BBBB</div>
+      <div className={styles.fixtures_mobile_layout}>
+        <ul>
+          {fixtures.map((fixtures) => (
+            <li key={fixtures.id}>
+              <div className={styles.fixtures_card_container}>
+                <div>
+                  <h6>{fixtures.tournament}</h6>
+                </div>
+                <div>
+                  <h5>{fixtures.teamA}</h5>
+                </div>
+                <div>
+                  <h5>VS</h5>
+                </div>
+                <div>
+                  <h5>{fixtures.teamB}</h5>
+                </div>
+                <div className={styles.divider}>
+                  <hr></hr>
+                </div>
+                <div className={styles.game_details}>
+                  <div>
+                    <h4>{fixtures.location}</h4>
+                  </div>
+                  <div>
+                    <h5>{fixtures.date}</h5>
+                  </div>
+                  <div>
+                    <h6>{fixtures.time}</h6>
+                  </div>
+                </div>
+              </div>
+            </li>
+          ))}
+        </ul>
+      </div>
     </div>
   );
 }
@@ -33,6 +92,7 @@ export async function getStaticProps() {
     {
       fixtures 
       {
+        id
         teamA
         teamB
         tournament

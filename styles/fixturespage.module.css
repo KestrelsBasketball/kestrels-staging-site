@@ -1,13 +1,149 @@
 .fixtures_desktop_layout {
   width: 90vw;
   margin: 0 auto;
-  background-color: lightgray;
+}
+.fixtures_mobile_layout {
+  display: none;
 }
 .fixture_container {
   display: flex;
   width: 60vw;
   margin: 0 auto;
   justify-content: space-between;
-  padding: 5px 15px 5px 15px;
+  align-items: center;
+  padding: 10px 15px 15px 15px;
   background-color: white;
+  border-radius: 8px;
+  color: var(--text-grey--);
+}
+.fixture_container h4 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  padding-top: 5px;
+  margin: 0;
+  min-width: 220px;
+}
+.align_right {
+  text-align: right;
+}
+.fixtures_values {
+  text-align: center;
+}
+.fixtures_values h5 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  margin: 0;
+}
+.fixtures_values h6 {
+  margin: 0;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+}
+.fixtures_details {
+  display: flex;
+  justify-content: space-between;
+  width: 60vw;
+  padding: 5px 15px 0 15px;
+  margin: 0 auto;
+  margin-bottom: var(--margin--16);
+}
+.fixtures_details h6 {
+  margin: 0;
+  color: white;
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 400;
+  margin-top: 5px;
+}
+/*---------Mobile Layout----------*/
+.fixtures_mobile_layout ul {
+  padding: 0;
+  margin: 0;
+}
+.fixtures_card_container {
+  display: flex;
+  flex-direction: column;
+  width: 90vw;
+  padding: 20px;
+  background-color: white;
+  text-align: center;
+  color: var(--text-grey--);
+  border-radius: 8px;
+  margin-bottom: var(--margin--32);
+}
+.fixtures_card_container h6 {
+  font-size: 1rem;
+  line-height: 1rem;
+  font-weight: 500;
+}
+.fixtures_card_container h5 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+}
+.divider {
+  margin: 16px;
+}
+
+.game_details h4 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  font-weight: 600;
+}
+.game_details h5 {
+  font-size: 1.25rem;
+}
+@media only screen and (max-width: 1060px) {
+  .fixture_container {
+    width: 70vw;
+  }
+  .fixtures_details {
+    width: 70vw;
+  }
+}
+@media only screen and (max-width: 890px) {
+  .fixture_container {
+    width: 80vw;
+  }
+  .fixtures_details {
+    width: 80vw;
+  }
+  .fixture_container h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+}
+@media only screen and (max-width: 768px) {
+  .fixture_container {
+    width: 80vw;
+  }
+  .fixtures_details {
+    width: 80vw;
+  }
+  .fixture_container h4 {
+    font-size: 1rem;
+    line-height: 1rem;
+    min-width: 150px;
+  }
+}
+@media only screen and (max-width: 768px) {
+}
+@media only screen and (max-width: 650px) {
+  .fixture_container {
+    display: none;
+  }
+  .fixtures_details {
+    display: none;
+  }
+  .fixture_container {
+    display: none;
+  }
+  .fixtures_mobile_layout {
+    display: flex;
+    flex-direction: row;
+    width: 90vw;
+    margin: 0 auto;
+  }
 }

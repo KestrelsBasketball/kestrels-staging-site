@@ -82,13 +82,10 @@
   }
 }
 @media only screen and (max-width: 960px) {
-  .container {
-    padding: 105px;
-  }
 }
 @media only screen and (max-width: 768px) {
   .container {
-    padding-bottom: 80px;
+    padding-bottom: 40px;
   }
   .hero_text h2 {
     font-size: 8rem;
