@@ -18,13 +18,13 @@
   font-size: 4.5rem;
   line-height: 4rem;
   letter-spacing: 8px;
-  color: transparent;
-  -webkit-text-stroke-width: 0.5px;
-  -webkit-text-stroke-color: #f99705;
+  color: #fe9901;
+  /* -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #f99705; */
   font-family: var(--font--family--Bebas);
 }
 .col_doc_container h4 {
-  font-size: 5rem;
+  font-size: 4.5rem;
   line-height: 4.5rem;
   color: white;
   letter-spacing: 5px;
@@ -50,7 +50,17 @@
   vertical-align: sub;
   padding-left: 10px;
 }
+@media only screen and (max-width: 1170px) {
+  .col_doc_container h4 {
+    font-size: 4rem;
+    line-height: 4rem;
+  }
+}
 @media only screen and (max-width: 1050px) {
+  .col_doc_container h4 {
+    font-size: 3.5rem;
+    line-height: 3.5rem;
+  }
   .col_doc_container {
     width: 45vw;
     padding: 50px 20px 50px 20px;

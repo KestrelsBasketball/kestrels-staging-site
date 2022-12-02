@@ -18,14 +18,14 @@ export default function History() {
             <div className={styles.history_content_container}>
               <div>
                 <Image
-                  src="/Kestrel_History.png"
+                  src="/Kestrel_History_02.png"
                   height={200}
                   alt="Kestrel text graphic"
                   className={styles.text_heading_img}
                 />
               </div>
               <div className={styles.text_content_styles}>
-                <h2>About Official Kestrels Basketball Club</h2>
+                <h2>About Kestrels Basketball Club</h2>
                 <h5>
                   Kestrels was founded in 2007 and has been growing steadily
                   ever since, with 180 members at present.

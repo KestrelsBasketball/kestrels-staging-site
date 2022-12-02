@@ -1,0 +1,13 @@
+.fixtures_desktop_layout {
+  width: 90vw;
+  margin: 0 auto;
+  background-color: lightgray;
+}
+.fixture_container {
+  display: flex;
+  width: 60vw;
+  margin: 0 auto;
+  justify-content: space-between;
+  padding: 5px 15px 5px 15px;
+  background-color: white;
+}

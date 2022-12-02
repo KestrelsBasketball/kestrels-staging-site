@@ -1,31 +1,11 @@
 import styles from "./sponsors.module.css";
 import { Grid, Image, Row, Col } from "@nextui-org/react";
 
-const sponsors = [
-  {
-    id: "01",
-    Image:
-      "https://res.cloudinary.com/dk5prkqtv/image/upload/v1669220655/site/Sponsor_blank_img_bbewqs.jpg",
-    Name: "Sponsor A",
-    WebsiteUrl: "www.ggogle.com",
-  },
-  {
-    id: "02",
-    Image:
-      "https://res.cloudinary.com/dk5prkqtv/image/upload/v1669220655/site/Sponsor_blank_img_bbewqs.jpg",
-    Name: "Sponsor B",
-    WebsiteUrl: "www.ggogle.com",
-  },
-  {
-    id: "03",
-    Image:
-      "https://res.cloudinary.com/dk5prkqtv/image/upload/v1669220655/site/Sponsor_blank_img_bbewqs.jpg",
-    Name: "Sponsor C",
-    WebsiteUrl: "www.ggogle.com",
-  },
-];
+import { API_URL } from "@config/index";
+import { GraphQLClient } from "graphql-request";
 
-export default function Sponsors() {
+export default function Sponsors(props) {
+  const { sponsors } = props;
   return (
     <div>
       <div className={styles.container}>
@@ -39,27 +19,50 @@ export default function Sponsors() {
           </Grid>
           <Grid xs={12} sm={9} md={9} className={styles.sponsors_list}>
             <Row gap={1}>
-              {sponsors.map((sponsor) => {
-                return (
-                  <Col justify="center" align="center" key={sponsor.id}>
-                    <div>
-                      <Image
-                        showSkeleton
-                        src={sponsor.Image}
-                        height={50}
-                        alt={sponsor.Name}
-                      />
-                    </div>
-                    <div>
-                      <span>{sponsor.Name}</span>
-                    </div>
-                  </Col>
-                );
-              })}
+              {sponsors.map((sponsors) => (
+                <Col justify="center" align="center" key={sponsors.id}>
+                  <div>
+                    <Image
+                      showSkeleton
+                      src={sponsors.sponsorLogo.url}
+                      height={50}
+                      alt={sponsors.name}
+                    />
+                  </div>
+                  <div>
+                    <span>{sponsors.name}</span>
+                  </div>
+                </Col>
+              ))}
             </Row>
           </Grid>
         </Grid.Container>
       </div>
     </div>
   );
+}
+export async function getStaticProps() {
+  const hygraph = new GraphQLClient(`${API_URL}`);
+  const { sponsors } = await hygraph.request(
+    `
+    {
+      sponsors {
+        name
+        id
+        sponsorLogo {
+          height
+          url
+          width
+        }
+      }
+    }
+
+    `
+  );
+  return {
+    props: {
+      sponsors,
+    },
+    revalidate: 50,
+  };
 }

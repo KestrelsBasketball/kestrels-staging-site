@@ -25,12 +25,12 @@ export default function Desktopnav() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.links_styles}>
+                <Link href="/Fixtures" className={styles.links_styles}>
                   Fixtures
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.links_styles}>
+                <Link href="/Result" className={styles.links_styles}>
                   Results
                 </Link>
               </li>

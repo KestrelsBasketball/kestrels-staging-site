@@ -7,37 +7,11 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
 
-const fixturesLimited = [
-  {
-    id: "01",
-    tournament: "MABB Men’s League",
-    TeamA: "kestrels",
-    TeamB: "Kildare Gliders BC",
-    Location: "Colaiste losagain, Portarlington",
-    Date: "Friday 18 November 2022",
-    Time: "19:30",
-  },
-  {
-    id: "02",
-    tournament: "Juvenile U14 Boys Div 2",
-    TeamA: "kestrels",
-    TeamB: "Longford Falcons BC",
-    Location: "Old Sports Hall, Maynooth PP",
-    Date: "Friday 22 November 2022",
-    Time: "17:30",
-  },
-  {
-    id: "03",
-    tournament: "Juvenile U14 Boys Div 2",
-    TeamA: "kestrels",
-    TeamB: "Portlaoise Panthers BC",
-    Location: "Colaiste losagain, Portarlington",
-    Date: "Friday 22 November 2022",
-    Time: "20:30",
-  },
-];
+import { API_URL } from "@config/index";
+import { GraphQLClient } from "graphql-request";
 
-export default function FixturesLimited() {
+export default function FixturesLimited(props) {
+  const { fixtures } = props;
   return (
     <div>
       <div className={styles.container}>
@@ -53,35 +27,33 @@ export default function FixturesLimited() {
           <Grid xs={12} sm={8} md={8} className={styles.fixtures_deskop_layout}>
             <div className={styles.fixtures_deskop_layout}>
               <ul>
-                {fixturesLimited.map((fixture) => {
-                  return (
-                    <li key={fixture.id}>
-                      <div className={styles.fixture_Card}>
-                        <div className={styles.fixture_tournament_title}>
-                          <h6>{fixture.tournament}</h6>
+                {fixtures.map((fixtures, id) => (
+                  <li key={fixtures.id}>
+                    <div className={styles.fixture_Card}>
+                      <div className={styles.fixture_tournament_title}>
+                        <h6>{fixtures.tournament}</h6>
+                      </div>
+                      <div className={styles.teams}>
+                        <div>
+                          <h5>{fixtures.teamA}</h5>
                         </div>
-                        <div className={styles.teams}>
-                          <div>
-                            <h5>{fixture.TeamA}</h5>
-                          </div>
-                          <div>
-                            <span>VS</span>
-                          </div>
-                          <div>
-                            <h5 className={styles.h5_left_align}>
-                              {fixture.TeamB}
-                            </h5>
-                          </div>
+                        <div>
+                          <span>VS</span>
                         </div>
-                        <div className={styles.game_details_container}>
-                          <div>{fixture.Location}</div>
-                          <div>{fixture.Date}</div>
-                          <div>{fixture.Time}</div>
+                        <div>
+                          <h5 className={styles.h5_left_align}>
+                            {fixtures.teamB}
+                          </h5>
                         </div>
                       </div>
-                    </li>
-                  );
-                })}
+                      <div className={styles.game_details_container}>
+                        <div>{fixtures.location}</div>
+                        <div>{fixtures.date}</div>
+                        <div>{fixtures.time}</div>
+                      </div>
+                    </div>
+                  </li>
+                ))}
               </ul>
             </div>
           </Grid>
@@ -94,43 +66,66 @@ export default function FixturesLimited() {
             modules={[Pagination]}
             className="mySwiper"
           >
-            {fixturesLimited.map((fixture) => {
-              return (
-                <SwiperSlide key={fixture.id}>
-                  <div className={styles.carousel_card}>
-                    <div className={styles.carousel_teams}>
-                      <div>
-                        <h6>{fixture.tournament}</h6>
-                      </div>
-                      <div>
-                        <h5>{fixture.TeamA}</h5>
-                      </div>
-                      <div>
-                        <h3>VS</h3>
-                      </div>
-                      <div>
-                        <h5>{fixture.TeamB}</h5>
-                      </div>
+            {fixtures.map((fixtures, id) => (
+              <SwiperSlide key={fixtures.id}>
+                <div className={styles.carousel_card}>
+                  <div className={styles.carousel_teams}>
+                    <div>
+                      <h6>{fixtures.tournament}</h6>
                     </div>
-                    <hr className={styles.solid}></hr>
-                    <div className={styles.game_details}>
-                      <div>
-                        <h4>{fixture.Location}</h4>
-                      </div>
-                      <div>
-                        <h5>{fixture.Date}</h5>
-                      </div>
-                      <div>
-                        <h6>{fixture.Time}</h6>
-                      </div>
+                    <div>
+                      <h5>{fixtures.teamA}</h5>
+                    </div>
+                    <div>
+                      <h3>VS</h3>
+                    </div>
+                    <div>
+                      <h5>{fixtures.teamB}</h5>
                     </div>
                   </div>
-                </SwiperSlide>
-              );
-            })}
+                  <hr className={styles.solid}></hr>
+                  <div className={styles.game_details}>
+                    <div>
+                      <h4>{fixtures.location}</h4>
+                    </div>
+                    <div>
+                      <h5>{fixtures.date}</h5>
+                    </div>
+                    <div>
+                      <h6>{fixtures.time}</h6>
+                    </div>
+                  </div>
+                </div>
+              </SwiperSlide>
+            ))}
           </Swiper>
         </div>
       </div>
     </div>
   );
+}
+export async function getStaticProps() {
+  const hygraph = new GraphQLClient(`${API_URL}`);
+  const { fixtures } = await hygraph.request(
+    `
+    {
+      fixtures {
+        id
+        teamA
+        teamB
+        tournament
+        location
+        date
+        time
+      }
+    }
+
+    `
+  );
+  return {
+    props: {
+      fixtures,
+    },
+    revalidate: 10,
+  };
 }

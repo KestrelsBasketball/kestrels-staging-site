@@ -4,10 +4,17 @@ import styles from "../styles/Home.module.css";
 import DesktopHero from "@/components/Heros/Desktop-Hero";
 import Sponsors from "@/components/Sponsors/sponsors";
 import Fixtures from "@/components/Fixtures/Fixtures-Limited";
-import ResultsLimited from "@/components/Results/Results-Limited";
+import ResultsLimited from "@/components/Results/Results";
 import Douments from "@/components/Documents/Douments";
 import History from "@/components/Club-History/History";
-export default function Home() {
+import { API_URL } from "@config/index";
+import { GraphQLClient } from "graphql-request";
+
+export default function Home(props) {
+  const { fixtures } = props;
+  const { result } = props;
+  const { sponsors } = props;
+
   return (
     <div>
       <Head>
@@ -19,13 +26,13 @@ export default function Home() {
         <DesktopHero />
       </div>
       <div>
-        <Sponsors />
+        <Sponsors sponsors={sponsors} />
       </div>
       <div>
-        <Fixtures />
+        <Fixtures fixtures={fixtures} />
       </div>
       <div>
-        <ResultsLimited />
+        <ResultsLimited result={result} />
       </div>
       <div>
         <Douments />
@@ -35,4 +42,48 @@ export default function Home() {
       </div>
     </div>
   );
+}
+export async function getStaticProps() {
+  const hygraph = new GraphQLClient(`${API_URL}`);
+  const { fixtures, result, sponsors } = await hygraph.request(
+    `
+    {
+      fixtures (first: 3 orderBy: createdAt_DESC) {
+        id
+        teamA
+        teamB
+        tournament
+        location
+        date
+        time
+      }
+      result (first: 3 orderBy: createdAt_DESC) {
+        id
+        teamA
+        teamAScore
+        teamB
+        teamBScore
+        tournament
+      }
+      sponsors {
+        id
+        name
+        sponsorLogo {
+          height
+          url
+          width
+        }
+      }
+    }
+
+    `
+  );
+  return {
+    props: {
+      fixtures,
+      result,
+      sponsors,
+    },
+    revalidate: 10,
+  };
 }
