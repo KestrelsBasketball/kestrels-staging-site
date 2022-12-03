@@ -58,6 +58,18 @@
     margin-top: 0;
   }
 }
+@media only screen and (max-width: 804px) {
+  .text_content_styles h2 {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-top: var(--margin--16);
+  }
+  .text_heading_img img {
+    width: 90vw;
+    margin: 0 auto;
+    height: 200px;
+  }
+}
 @media only screen and (max-width: 650px) {
   .text_content_styles h2 {
     font-size: 2rem;
@@ -68,11 +80,12 @@
   .text_heading_img img {
     width: 90vw;
     margin: 0 auto;
-    height: 220px;
+    height: 240px;
   }
   .text_content_styles h2 {
     font-size: 2rem;
     line-height: 2.5rem;
-    margin-top: 0;
+    margin-top: var(--margin--8);
+    margin-bottom: var(--margin--8);
   }
 }

@@ -55,6 +55,7 @@
     order: 1;
   }
 }
+
 @media only screen and (max-width: 960px) {
   .container {
     background-color: #343333;
@@ -81,12 +82,12 @@
     margin-bottom: var(--margin--24);
   }
 }
-@media only screen and (max-width: 960px) {
+@media only screen and (max-width: 804px) {
+  .container {
+    padding: 40px 40px 120px 40px;
+  }
 }
 @media only screen and (max-width: 768px) {
-  .container {
-    padding-bottom: 40px;
-  }
   .hero_text h2 {
     font-size: 8rem;
     letter-spacing: 14px;
@@ -122,12 +123,10 @@
   .container {
     width: 92vw;
     margin: 0 auto;
-    padding: 20px;
-  }
-  .container {
     margin-top: var(--margin--16);
-    padding-bottom: 50px;
+    padding: 20px 20px 80px 20px;
   }
+
   .hero_text h2 {
     font-size: 4.1rem;
     margin-top: var(--margin--24);

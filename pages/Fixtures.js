@@ -7,7 +7,10 @@ export default function Fixtures(props) {
 
   return (
     <div>
-      <div>A</div>
+      <div className={styles.fixture_title_header_container}>
+        <h4>Up Comming</h4>
+        <h3>Fixtures</h3>
+      </div>
       <div className={styles.fixtures_desktop_layout}>
         <ul>
           {fixtures.map((fixtures) => (
@@ -73,7 +76,7 @@ export default function Fixtures(props) {
                     <h5>{fixtures.date}</h5>
                   </div>
                   <div>
-                    <h6>{fixtures.time}</h6>
+                    <h4>{fixtures.time}</h4>
                   </div>
                 </div>
               </div>

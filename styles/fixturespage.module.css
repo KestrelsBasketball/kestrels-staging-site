@@ -5,6 +5,45 @@
 .fixtures_mobile_layout {
   display: none;
 }
+.fixture_header_titles {
+  width: 40vw;
+  margin: 0 auto;
+  margin-top: var(--section--margin--150);
+  background-color: lightblue;
+}
+.fixture_title_header_container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  width: 40vw;
+  height: 45vh;
+  margin: 0 auto;
+  margin-top: var(--section--margin--100);
+  margin-bottom: var(--margin--24);
+  background-image: url("/Fixtures_player.png");
+  background-repeat: no-repeat;
+  background-position: left;
+  margin-top: var(--section--margin--150);
+}
+.fixture_title_header_container h4 {
+  font-size: 6rem;
+  line-height: 5rem;
+  letter-spacing: 8px;
+  color: transparent;
+  -webkit-text-stroke-width: 0.5px;
+  -webkit-text-stroke-color: #e90d0d;
+  font-family: var(--font--family--Bebas);
+  text-align: center;
+}
+.fixture_title_header_container h3 {
+  text-align: center;
+  font-size: 7rem;
+  line-height: 6.5rem;
+  letter-spacing: 6px;
+  color: white;
+  font-family: var(--font--family--Bebas);
+  margin: 0;
+}
 .fixture_container {
   display: flex;
   width: 60vw;
@@ -83,8 +122,10 @@
   line-height: 1.5rem;
   font-weight: 700;
 }
+
 .divider {
-  margin: 16px;
+  margin-top: 8px;
+  margin-bottom: 16px;
 }
 
 .game_details h4 {
@@ -94,6 +135,11 @@
 }
 .game_details h5 {
   font-size: 1.25rem;
+}
+@media only screen and (max-width: 1120px) {
+  .fixture_title_header_container {
+    width: 50vw;
+  }
 }
 @media only screen and (max-width: 1060px) {
   .fixture_container {
@@ -114,6 +160,13 @@
     font-size: 1rem;
     line-height: 1rem;
   }
+  .fixture_title_header_container {
+    width: 60vw;
+    height: 50vh;
+  }
+  .fixture_container h4 {
+    min-width: 200px;
+  }
 }
 @media only screen and (max-width: 768px) {
   .fixture_container {
@@ -127,9 +180,12 @@
     line-height: 1rem;
     min-width: 150px;
   }
+  .fixture_title_header_container {
+    width: 65vw;
+    height: 55vh;
+  }
 }
-@media only screen and (max-width: 768px) {
-}
+
 @media only screen and (max-width: 650px) {
   .fixture_container {
     display: none;
@@ -145,5 +201,37 @@
     flex-direction: row;
     width: 90vw;
     margin: 0 auto;
+  }
+  .fixture_title_header_container {
+    width: 80vw;
+    height: 55vh;
+  }
+  .fixture_title_header_container h4 {
+    font-size: 5rem;
+    line-height: 4.5rem;
+    letter-spacing: 8px;
+  }
+  .fixture_title_header_container h3 {
+    text-align: center;
+    font-size: 5rem;
+    line-height: 4.5rem;
+    letter-spacing: 6px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .fixture_title_header_container h4 {
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 8px;
+  }
+  .fixture_title_header_container h3 {
+    text-align: center;
+    font-size: 4rem;
+    line-height: 4rem;
+    letter-spacing: 6px;
+  }
+  .fixture_title_header_container {
+    width: 90vw;
+    height: 65vh;
   }
 }
