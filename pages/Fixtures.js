@@ -1,9 +1,13 @@
 import styles from "../styles/fixturespage.module.css";
+import JoinClub from "@/components/Join-Club/Join-Club";
+import Sponsors from "@/components/Sponsors/sponsors";
+
 import { API_URL } from "@config/index";
 import { GraphQLClient } from "graphql-request";
 
 export default function Fixtures(props) {
   const { fixtures } = props;
+  const { sponsors } = props;
 
   return (
     <div>
@@ -84,13 +88,19 @@ export default function Fixtures(props) {
           ))}
         </ul>
       </div>
+      <div>
+        <JoinClub />
+      </div>
+      <div>
+        <Sponsors sponsors={sponsors} />
+      </div>
     </div>
   );
 }
 
 export async function getStaticProps() {
   const hygraph = new GraphQLClient(`${API_URL}`);
-  const { fixtures } = await hygraph.request(
+  const { fixtures, sponsors } = await hygraph.request(
     `
     {
       fixtures 
@@ -103,6 +113,15 @@ export async function getStaticProps() {
         date
         time
       }
+      sponsors {
+        id
+        name
+        sponsorLogo {
+          height
+          url
+          width
+        }
+      }
     }
 
     `
@@ -110,6 +129,7 @@ export async function getStaticProps() {
   return {
     props: {
       fixtures,
+      sponsors,
     },
     revalidate: 10,
   };

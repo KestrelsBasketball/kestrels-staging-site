@@ -1,6 +1,6 @@
 import styles from "./resultslimited.module.css";
 import { Grid } from "@nextui-org/react";
-
+import Link from "next/link";
 import { API_URL } from "@config/index";
 import { GraphQLClient } from "graphql-request";
 
@@ -41,6 +41,11 @@ export default function Results(props) {
                   </li>
                 ))}
               </ul>
+              <div className={styles.view_more_btn_container}>
+                <Link href="/Result">
+                  <button>View More</button>
+                </Link>
+              </div>
             </div>
             <div className={styles.results_mobile_container}>
               <ul>

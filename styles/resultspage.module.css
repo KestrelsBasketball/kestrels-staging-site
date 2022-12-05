@@ -178,12 +178,10 @@
 @media only screen and (max-width: 650px) {
   .results_title_header_container {
     width: 80vw;
-    height: 45vh;
+    height: 35vh;
+    background-image: url("/Fixtures_player_mobile.png");
   }
-  .results_title_header_container {
-    width: 60vw;
-    height: 60vh;
-  }
+
   .results_title_header_container h4 {
     font-size: 5rem;
     line-height: 4.5rem;
@@ -194,5 +192,11 @@
     font-size: 5rem;
     line-height: 4.5rem;
     letter-spacing: 6px;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .results_title_header_container {
+    width: 80vw;
+    height: 35vh;
   }
 }

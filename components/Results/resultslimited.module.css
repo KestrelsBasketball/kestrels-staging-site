@@ -141,7 +141,22 @@
 .Team_B h5 {
   margin: 0;
 }
-
+.view_more_btn_container {
+  display: flex;
+  justify-content: flex-end;
+}
+.view_more_btn_container button {
+  background-color: transparent;
+  border: none;
+  color: #f99705;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: var(--font--family--Bebas);
+  cursor: pointer;
+}
+.view_more_btn_container button:hover {
+  color: white;
+}
 @media only screen and (max-width: 1280px) {
   .results_container h5 {
     min-width: 220px;

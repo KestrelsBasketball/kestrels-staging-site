@@ -1,6 +1,7 @@
 import styles from "./fixtures.module.css";
 import { Grid, Image } from "@nextui-org/react";
 import { Swiper, SwiperSlide } from "swiper/react";
+import Link from "next/link";
 import { Pagination } from "swiper";
 import "swiper/css";
 import "swiper/css/navigation";
@@ -57,6 +58,11 @@ export default function FixturesLimited(props) {
               </ul>
             </div>
           </Grid>
+          <div className={styles.view_more_btn_container}>
+            <Link href="/Fixtures" className={styles.view_more_link}>
+              <buuton>View More</buuton>
+            </Link>
+          </div>
         </Grid.Container>
         <div className={styles.fixtures_carousel_container}>
           <Swiper

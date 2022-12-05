@@ -35,7 +35,7 @@ export default function Desktopnav() {
                 </Link>
               </li>
               <li>
-                <Link href="/" className={styles.links_styles}>
+                <Link href="/Staff" className={styles.links_styles}>
                   Staff
                 </Link>
               </li>

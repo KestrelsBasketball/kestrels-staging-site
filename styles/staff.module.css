@@ -1,0 +1,56 @@
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 90vw;
+  margin: 0 auto;
+  gap: 32px;
+  margin-top: var(--section--margin--100);
+  margin-bottom: var(--section--margin--100);
+}
+.container ul {
+  margin: 0;
+}
+.members_profile_img {
+  width: 270px;
+  margin: 0 auto;
+}
+.staff_card {
+  width: 28vw;
+  margin: 0 auto;
+}
+.staff_card h3 {
+  font-family: var(--font--family--inter);
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 700;
+  color: white;
+  text-align: center;
+  margin-top: var(--margin--16);
+}
+.staff_card h4 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  text-align: center;
+  color: white;
+}
+.staff_card h5 {
+  font-size: 1.25rem;
+  line-height: 1.25rem;
+  color: white;
+  text-align: center;
+}
+@media only screen and (max-width: 1060px) {
+  .staff_card {
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    flex-direction: column;
+  }
+  .staff_card {
+    width: 70vw;
+  }
+}

@@ -146,7 +146,22 @@
   margin-top: var(--margin--4);
   margin-bottom: var(--margin--16);
 }
-
+.view_more_btn_container {
+  display: flex;
+  width: 90vw;
+  justify-content: flex-end;
+}
+.view_more_link {
+  background: transparent;
+  color: #f99705;
+  font-size: 2rem;
+  line-height: 2rem;
+  font-family: var(--font--family--Bebas);
+  margin-right: 20px;
+}
+.view_more_link:hover {
+  color: white;
+}
 @media only screen and (max-width: 1080px) {
   .fixture_Card {
     width: 58vw;

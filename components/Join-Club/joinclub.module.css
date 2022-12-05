@@ -91,7 +91,7 @@
 }
 @media only screen and (max-width: 425px) {
   .container {
-    padding: 20px;
+    padding: 40px;
     margin-top: var(--section--margin--150);
     margin-bottom: var(--section--margin--150);
   }

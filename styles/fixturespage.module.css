@@ -232,6 +232,7 @@
   }
   .fixture_title_header_container {
     width: 90vw;
-    height: 65vh;
+    height: 35vh;
+    background-image: url("/Fixtures_player_mobile.png");
   }
 }
