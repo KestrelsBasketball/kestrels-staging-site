@@ -27,6 +27,9 @@
 .links_styles {
   color: white;
 }
+.links_styles:hover {
+  color: #e90d0d;
+}
 @media only screen and (max-width: 650px) {
   .outer_container {
     display: none;

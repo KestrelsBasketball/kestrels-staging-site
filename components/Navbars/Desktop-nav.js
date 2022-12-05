@@ -56,7 +56,7 @@ export default function Desktopnav() {
                       color: "$myWhite",
                       "&:hover": {
                         background: "$myGrey",
-                        color: "$myWhite",
+                        color: "$myRed",
                       },
                       "&:active": {
                         background: "$myGrey",

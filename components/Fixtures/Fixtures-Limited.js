@@ -105,6 +105,11 @@ export default function FixturesLimited(props) {
               </SwiperSlide>
             ))}
           </Swiper>
+          <div className={styles.view_more_btn_mobile_container}>
+            <Link href="/Fixtures" className={styles.view_more_link}>
+              <buuton>View More</buuton>
+            </Link>
+          </div>
         </div>
       </div>
     </div>

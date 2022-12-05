@@ -87,7 +87,7 @@
 }
 /*---------Carousel Card-------*/
 .carousel_card {
-  background-color: #333333;
+  background-color: white;
   border-radius: 8px;
   padding: 20px;
 }
@@ -97,7 +97,7 @@
   align-items: center;
   align-content: center;
   justify-content: space-between;
-  color: var(--text-off-white);
+  color: var(--text-grey--);
   margin-bottom: var(--margin--16);
 }
 .carousel_teams h6 {
@@ -123,7 +123,7 @@
   align-items: center;
   align-content: center;
   flex-direction: column;
-  color: var(--text-off-white);
+  color: var(--text-grey--);
   margin-top: var(--margin--16);
 }
 .game_details h4 {
@@ -151,6 +151,9 @@
   width: 90vw;
   justify-content: flex-end;
 }
+.view_more_btn_mobile_container {
+  display: none;
+}
 .view_more_link {
   background: transparent;
   color: #f99705;
@@ -164,7 +167,7 @@
 }
 @media only screen and (max-width: 1080px) {
   .fixture_Card {
-    width: 58vw;
+    width: 52vw;
   }
 }
 @media only screen and (max-width: 960px) {
@@ -201,5 +204,14 @@
   }
   .fixtures_carousel_container {
     display: block;
+  }
+  .view_more_btn_container {
+    display: none;
+  }
+  .view_more_btn_mobile_container {
+    display: flex;
+    width: 90vw;
+    margin-top: var(--margin--16);
+    justify-content: flex-end;
   }
 }

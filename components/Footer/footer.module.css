@@ -1,0 +1,124 @@
+.container {
+  width: 100vw;
+  background-color: #242323;
+  padding: 40px;
+}
+.footer_container {
+  display: flex;
+  width: 90vw;
+  margin: 0 auto;
+}
+.logo_container {
+  height: 140px;
+}
+.contact_details_container {
+  margin-top: var(--margin--16);
+}
+.contact_details_container h5 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 600;
+  color: white;
+}
+.contact_details_container p {
+  color: white;
+  font-weight: 500;
+}
+.links_footer {
+  color: white;
+  padding-left: 5px;
+  text-decoration: underline;
+}
+.links_footer:hover {
+  color: #cc1c1c;
+}
+.footer_page_links_container {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-around;
+}
+.helpful_links_container {
+  width: 30vw;
+  color: white;
+}
+.helpful_links_container li {
+  margin-bottom: 0;
+}
+.helpful_links_container h5 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+.footer_page_link {
+  font-size: 1rem;
+  line-height: 1rem;
+  color: white;
+}
+.footer_page_link:hover {
+  color: #cc1c1c;
+}
+.document_links_container {
+  width: 30vw;
+}
+.document_links_container li {
+  margin: 0;
+}
+.document_links_container h5 {
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-weight: 500;
+  color: white;
+}
+.doc_links {
+  color: white;
+}
+.doc_links:hover {
+  color: #cc1c1c;
+}
+.footer_year {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: var(--margin--16);
+  color: white;
+}
+.small_print_container {
+  display: flex;
+  justify-content: space-between;
+}
+.small_print_container h6 {
+  margin: 8px 0 8px 0;
+}
+hr.hr_border {
+  width: 90vw;
+  border: 1px solid #727272;
+}
+@media only screen and (max-width: 768px) {
+  .footer_brand_container {
+    padding: 20px;
+  }
+  .container {
+    padding: 20px;
+  }
+  .footer_page_links_container {
+    display: flex;
+    width: 90vw;
+    justify-content: flex-start;
+  }
+  .helpful_links_container {
+    order: 2;
+    width: 40vw;
+  }
+  .document_links_container {
+    order: 1;
+    width: 40vw;
+  }
+}
+@media only screen and (max-width: 425px) {
+  .helpful_links_container {
+    width: 45vw;
+  }
+  .document_links_container {
+    width: 45vw;
+  }
+}
