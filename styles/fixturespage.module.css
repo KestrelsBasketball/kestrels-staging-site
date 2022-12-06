@@ -148,6 +148,9 @@
   .fixtures_details {
     width: 70vw;
   }
+  .fixture_title_header_container h4 {
+    -webkit-text-stroke-width: 1px;
+  }
 }
 @media only screen and (max-width: 890px) {
   .fixture_container {
@@ -162,7 +165,7 @@
   }
   .fixture_title_header_container {
     width: 60vw;
-    height: 50vh;
+    height: 80vh;
   }
   .fixture_container h4 {
     min-width: 200px;

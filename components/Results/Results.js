@@ -41,43 +41,47 @@ export default function Results(props) {
                   </li>
                 ))}
               </ul>
-              <div className={styles.view_more_btn_container}>
+              <div className={styles.view_more_btn_desktop_container}>
                 <Link href="/Result">
                   <button>View More</button>
                 </Link>
               </div>
             </div>
             <div className={styles.results_mobile_container}>
-              <ul>
-                {result.map((result) => (
-                  <li key={result.id}>
-                    <div className={styles.results_card_mobile}>
-                      <div>
-                        <h6>{result.tournament}</h6>
-                      </div>
-                      <div className={styles.Team_A}>
+              <div>
+                <ul>
+                  {result.map((result) => (
+                    <li key={result.id}>
+                      <div className={styles.results_card_mobile}>
                         <div>
-                          <h5>{result.teamA}</h5>
+                          <h6>{result.tournament}</h6>
+                        </div>
+                        <div className={styles.Team_A}>
+                          <div>
+                            <h5>{result.teamA}</h5>
+                          </div>
+                          <div>
+                            <h5>{result.teamAScore}</h5>
+                          </div>
                         </div>
                         <div>
-                          <h5>{result.teamAScore}</h5>
+                          <hr></hr>
+                        </div>
+                        <div className={styles.Team_B}>
+                          <div>
+                            <h5 className={styles.align_right}>
+                              {result.teamB}
+                            </h5>
+                          </div>
+                          <div>
+                            <h5>{result.teamBScore}</h5>
+                          </div>
                         </div>
                       </div>
-                      <div>
-                        <hr></hr>
-                      </div>
-                      <div className={styles.Team_B}>
-                        <div>
-                          <h5>{result.teamB}</h5>
-                        </div>
-                        <div>
-                          <h5>{result.teamBScore}</h5>
-                        </div>
-                      </div>
-                    </div>
-                  </li>
-                ))}
-              </ul>
+                    </li>
+                  ))}
+                </ul>
+              </div>
             </div>
           </Grid>
           <Grid
@@ -95,6 +99,11 @@ export default function Results(props) {
             </div>
           </Grid>
         </Grid.Container>
+        <div className={styles.view_more_btn_container_mobile}>
+          <Link href="/Result">
+            <button>View More</button>
+          </Link>
+        </div>
       </div>
     </div>
   );

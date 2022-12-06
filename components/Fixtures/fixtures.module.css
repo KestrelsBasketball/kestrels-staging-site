@@ -43,9 +43,9 @@
   margin-bottom: var(--margin--48);
 }
 .fixture_tournament_title h6 {
-  font-size: 1rem;
+  font-size: 0.9rem;
   font-weight: 500;
-  line-height: 1rem;
+  line-height: 0.9rem;
   padding-top: 7px;
   text-align: center;
   color: var(--text-grey--);
@@ -169,6 +169,12 @@
   .fixture_Card {
     width: 52vw;
   }
+  .teams h5 {
+    font-size: 1rem;
+    line-height: 1rem;
+    min-width: 220px;
+    margin: 0;
+  }
 }
 @media only screen and (max-width: 960px) {
   .fixture_graphic_container_desktop h3 {
@@ -176,6 +182,12 @@
   }
   .fixture_Card {
     width: 90vw;
+  }
+  .teams h5 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    min-width: 220px;
+    margin: 0;
   }
 }
 @media only screen and (max-width: 650px) {
@@ -193,8 +205,8 @@
     margin-bottom: var(--margin--24);
   }
   .fixture_graphic_container_desktop h4 {
-    font-size: 4rem;
-    line-height: 3rem;
+    font-size: 5rem;
+    line-height: 4.5rem;
     letter-spacing: 8px;
     -webkit-text-stroke-width: 1.5px;
     -webkit-text-stroke-color: #f60909;

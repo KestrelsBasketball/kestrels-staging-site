@@ -23,6 +23,7 @@
 .contact_details_container p {
   color: white;
   font-weight: 500;
+  font-size: 1rem;
 }
 .links_footer {
   color: white;
@@ -71,6 +72,7 @@
   color: white;
 }
 .doc_links {
+  font-size: 1rem;
   color: white;
 }
 .doc_links:hover {
@@ -93,7 +95,27 @@ hr.hr_border {
   width: 90vw;
   border: 1px solid #727272;
 }
+@media only screen and (max-width: 960px) {
+  .footer_page_link {
+    font-size: 0.9rem;
+  }
+  .doc_links {
+    font-size: 0.9rem;
+  }
+  .contact_details_container h5 {
+    font-size: 1.2rem;
+    line-height: 1.2rem;
+    font-weight: 600;
+    color: white;
+  }
+}
 @media only screen and (max-width: 768px) {
+  .document_links_container {
+    display: none;
+  }
+  .helpful_links_container {
+    display: none;
+  }
   .footer_brand_container {
     padding: 20px;
   }

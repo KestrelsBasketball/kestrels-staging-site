@@ -8,7 +8,7 @@ export default function Footer() {
       <div className={styles.container}>
         <div className={styles.footer_container}>
           <Grid.Container>
-            <Grid xs={12} sm={4}>
+            <Grid xs={4} sm={4}>
               <div className={styles.footer_brand_container}>
                 <div className={styles.logo_container}>
                   <Image src="./Logo_footer.png" />
@@ -37,7 +37,7 @@ export default function Footer() {
                 </div>
               </div>
             </Grid>
-            <Grid xs={12} sm={8}>
+            <Grid xs={8} sm={8}>
               <div className={styles.footer_page_links_container}>
                 <div className={styles.helpful_links_container}>
                   <ul>
@@ -133,12 +133,12 @@ export default function Footer() {
               </div>
               <div className={styles.small_print_container}>
                 <div>
-                  <h6>
+                  <small>
                     Copyright© {new Date().getFullYear()} All rights reserved
-                  </h6>
+                  </small>
                 </div>
                 <div>
-                  <h6>Made by SHANE</h6>
+                  <small>Made by SHANE</small>
                 </div>
               </div>
             </div>

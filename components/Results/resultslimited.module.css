@@ -51,8 +51,8 @@
   margin: 0;
 }
 .Tournament_title h6 {
-  font-size: 1rem;
-  line-height: 1rem;
+  font-size: 0.9rem;
+  line-height: 0.9rem;
   font-weight: 500;
   text-align: center;
   color: var(--text-grey--);
@@ -141,11 +141,11 @@
 .Team_B h5 {
   margin: 0;
 }
-.view_more_btn_container {
+.view_more_btn_desktop_container {
   display: flex;
   justify-content: flex-end;
 }
-.view_more_btn_container button {
+.view_more_btn_desktop_container button {
   background-color: transparent;
   border: none;
   color: #f99705;
@@ -154,9 +154,13 @@
   font-family: var(--font--family--Bebas);
   cursor: pointer;
 }
-.view_more_btn_container button:hover {
+.view_more_btn_desktop_container button:hover {
   color: white;
 }
+.view_more_btn_container_mobile {
+  display: none;
+}
+
 @media only screen and (max-width: 1280px) {
   .results_container h5 {
     min-width: 220px;
@@ -167,12 +171,13 @@
     text-align: center;
   }
   .results_container h5 {
+    font-size: 1rem;
     min-width: 200px;
   }
 }
 @media only screen and (max-width: 960px) {
   .results_container h5 {
-    text-align: center;
+    font-size: 1.2rem;
   }
   .latest_heading h3 {
     margin-bottom: var(--margin--24);
@@ -211,6 +216,22 @@
     font-size: 5rem;
     line-height: 5rem;
     margin-bottom: var(--margin--24);
+  }
+  .view_more_btn_container_mobile {
+    display: flex;
+    justify-content: flex-end;
+  }
+  .view_more_btn_container_mobile button {
+    background-color: transparent;
+    border: none;
+    color: #f99705;
+    font-size: 2rem;
+    line-height: 2rem;
+    font-family: var(--font--family--Bebas);
+    cursor: pointer;
+  }
+  .view_more_btn_container_mobile button:hover {
+    color: white;
   }
 }
 @media only screen and (max-width: 425px) {

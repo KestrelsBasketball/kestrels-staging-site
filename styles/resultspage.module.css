@@ -142,6 +142,15 @@
     margin: 0;
     min-width: 200px;
   }
+  .result_outer_container {
+    width: 80vw;
+  }
+  .results_title_header_container {
+    height: 70vh;
+  }
+  .results_title_header_container h4 {
+    -webkit-text-stroke-width: 1px;
+  }
 }
 @media only screen and (max-width: 860px) {
   .scores_content_container h5 {
