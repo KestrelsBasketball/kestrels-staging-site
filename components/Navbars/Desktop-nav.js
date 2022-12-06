@@ -1,6 +1,6 @@
 import styles from "./desktop.module.css";
-import { Dropdown, Image, Navbar } from "@nextui-org/react";
-import Link from "next/link";
+
+import { Dropdown, Image, Navbar, Link } from "@nextui-org/react";
 
 export default function Desktopnav() {
   return (
@@ -111,7 +111,19 @@ export default function Desktopnav() {
               }}
             >
               <Navbar.CollapseItem>
-                <Link href="./">Home</Link>
+                <div className={styles.mobile_nav_links_container}>
+                  <Link href="/" css={{ color: "$white" }}>
+                    Home
+                  </Link>
+                  <Link href="/Fixtures" css={{ color: "$white" }}>
+                    Fixtures
+                  </Link>
+                  <Link href="/Result" css={{ color: "$white" }}>
+                    Results
+                  </Link>
+                  <Link href="/Staff">Staff</Link>
+                  <div className={styles.docs_mobile_container}></div>
+                </div>
               </Navbar.CollapseItem>
             </Navbar.Collapse>
           </Navbar>

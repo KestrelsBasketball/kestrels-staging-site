@@ -130,7 +130,8 @@
 
   .hero_text h2 {
     font-size: 4.1rem;
-    margin-top: var(--margin--24);
-    margin-bottom: var(--margin--16);
+    line-height: 4rem;
+    margin-top: var(--margin--16);
+    margin-bottom: var(--margin--8);
   }
 }

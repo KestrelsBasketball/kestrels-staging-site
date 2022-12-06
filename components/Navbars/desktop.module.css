@@ -49,8 +49,12 @@
     margin: 0 auto;
   }
   .mobile_logo_inner_container {
-    width: 15vw;
+    width: 20vw;
     margin: 0 auto;
+    padding-right: 22px;
+  }
+  .mobile_nav_links_container {
+    color: pink;
   }
 }
 @media only screen and (max-width: 650px) {
