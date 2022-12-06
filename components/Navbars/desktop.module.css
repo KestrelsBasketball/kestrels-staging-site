@@ -55,6 +55,13 @@
   }
   .mobile_nav_links_container {
     color: pink;
+    font-size: 1.3rem;
+    padding-top: var(--margin--8);
+    padding-bottom: var(--margin--24);
+  }
+  .mobile_nav_link {
+    margin-top: var(--margin--16);
+    margin-bottom: var(--margin--16);
   }
 }
 @media only screen and (max-width: 650px) {

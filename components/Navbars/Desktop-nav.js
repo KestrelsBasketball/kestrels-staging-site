@@ -112,16 +112,34 @@ export default function Desktopnav() {
             >
               <Navbar.CollapseItem>
                 <div className={styles.mobile_nav_links_container}>
-                  <Link href="/" css={{ color: "$white" }}>
+                  <Link
+                    href="/"
+                    css={{ color: "$myWhite" }}
+                    className={styles.mobile_nav_link}
+                  >
                     Home
                   </Link>
-                  <Link href="/Fixtures" css={{ color: "$white" }}>
+                  <Link
+                    href="/Fixtures"
+                    css={{ color: "$myWhite" }}
+                    className={styles.mobile_nav_link}
+                  >
                     Fixtures
                   </Link>
-                  <Link href="/Result" css={{ color: "$white" }}>
+                  <Link
+                    href="/Result"
+                    css={{ color: "$myWhite" }}
+                    className={styles.mobile_nav_link}
+                  >
                     Results
                   </Link>
-                  <Link href="/Staff">Staff</Link>
+                  <Link
+                    href="/Staff"
+                    css={{ color: "$myWhite" }}
+                    className={styles.mobile_nav_link}
+                  >
+                    Staff
+                  </Link>
                   <div className={styles.docs_mobile_container}></div>
                 </div>
               </Navbar.CollapseItem>
