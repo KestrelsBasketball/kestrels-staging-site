@@ -1,0 +1,39 @@
+.nav_mobile_container {
+  display: none;
+}
+
+@media only screen and (max-width: 768px) {
+  .nav_mobile_container {
+    display: block;
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .mobile_logo {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .mobile_logo_inner_container {
+    width: 20vw;
+    margin: 0 auto;
+    padding-right: 22px;
+  }
+  .mobile_nav_links_container {
+    color: white;
+    font-size: 1.3rem;
+    padding-top: var(--margin--8);
+    padding-bottom: var(--margin--24);
+  }
+  .mobile_nav_link {
+    margin-top: var(--margin--16);
+    margin-bottom: var(--margin--16);
+  }
+}
+@media only screen and (max-width: 650px) {
+  .mobile_logo_inner_container {
+    width: 25vw;
+    margin: 0 auto;
+    padding-right: 22px;
+  }
+}
