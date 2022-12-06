@@ -1,3 +1,6 @@
+.nav_mobile_container {
+  display: none;
+}
 .outer_container {
   width: 90vw;
   display: flex;
@@ -29,6 +32,26 @@
 }
 .links_styles:hover {
   color: #e90d0d;
+}
+@media only screen and (max-width: 768px) {
+  .outer_container {
+    display: none;
+  }
+  .nav_mobile_container {
+    display: flex;
+    width: 100vw;
+    margin: 0 auto;
+  }
+
+  .mobile_logo {
+    display: flex;
+    width: 90vw;
+    margin: 0 auto;
+  }
+  .mobile_logo_inner_container {
+    width: 12vw;
+    margin: 0 auto;
+  }
 }
 @media only screen and (max-width: 650px) {
   .outer_container {

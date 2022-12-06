@@ -1,5 +1,5 @@
 import styles from "./desktop.module.css";
-import { Dropdown, Image } from "@nextui-org/react";
+import { Dropdown, Image, Navbar } from "@nextui-org/react";
 import Link from "next/link";
 
 export default function Desktopnav() {
@@ -80,6 +80,41 @@ export default function Desktopnav() {
               </li>
             </ul>
           </div>
+        </div>
+      </div>
+      <div className={styles.nav_mobile_container}>
+        <div className={styles.nav_mobile_inner_container}>
+          <Navbar
+            variant="sticky"
+            css={{
+              $$navbarBackgroundColor: "$mobile_background_color",
+              $$navbarBlurBackgroundColor: "#212222",
+            }}
+          >
+            <Navbar.Brand>
+              <Navbar.Toggle
+                aria-label="toggle navigation"
+                css={{ $$navbarTextColor: "#ffff" }}
+              />
+              <div className={styles.mobile_logo}>
+                <div className={styles.mobile_logo_inner_container}>
+                  <Link href="./">
+                    <Image src="/Logo_mobile.png" alt="Kestrels Logo" />
+                  </Link>
+                </div>
+              </div>
+            </Navbar.Brand>
+            <Navbar.Collapse
+              css={{
+                $$navbarListBlurBackgroundColor: "#1c1c1c",
+                line: "#ffff",
+              }}
+            >
+              <Navbar.CollapseItem>
+                <Link href="./">Home</Link>
+              </Navbar.CollapseItem>
+            </Navbar.Collapse>
+          </Navbar>
         </div>
       </div>
     </div>

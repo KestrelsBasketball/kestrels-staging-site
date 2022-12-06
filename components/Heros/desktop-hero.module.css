@@ -84,12 +84,12 @@
 }
 @media only screen and (max-width: 804px) {
   .container {
-    padding: 40px 40px 120px 40px;
+    padding: 20px 20px 80px 20px;
   }
 }
 @media only screen and (max-width: 768px) {
   .hero_text h2 {
-    font-size: 8rem;
+    font-size: 7rem;
     letter-spacing: 14px;
     margin-top: var(--margin--24);
     margin-bottom: var(--margin--24);

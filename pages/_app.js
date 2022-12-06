@@ -9,6 +9,7 @@ const theme = createTheme({
       myGrey: "#1c1c1c",
       myWhite: "#ffffff",
       myRed: "#e90d0d",
+      mobile_background_color: "#1c1c1c",
     },
   },
 });
