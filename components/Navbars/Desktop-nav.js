@@ -1,7 +1,7 @@
 import styles from "./desktop.module.css";
 
-import { Dropdown, Image, Link } from "@nextui-org/react";
-
+import { Dropdown, Image } from "@nextui-org/react";
+import Link from "next/link";
 export default function Desktopnav() {
   return (
     <div>

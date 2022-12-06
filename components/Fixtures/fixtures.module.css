@@ -156,14 +156,14 @@
 }
 .view_more_link {
   background: transparent;
-  color: #f99705;
+  color: #f99705 !important;
   font-size: 2rem;
   line-height: 2rem;
   font-family: var(--font--family--Bebas);
   margin-right: 20px;
 }
 .view_more_link:hover {
-  color: white;
+  color: white !important;
 }
 @media only screen and (max-width: 1080px) {
   .fixture_Card {
@@ -176,6 +176,7 @@
     margin: 0;
   }
 }
+
 @media only screen and (max-width: 960px) {
   .fixture_graphic_container_desktop h3 {
     margin-bottom: var(--margin--24);
@@ -190,6 +191,7 @@
     margin: 0;
   }
 }
+
 @media only screen and (max-width: 650px) {
   .fixture_graphic_container_desktop {
     display: flex;
@@ -200,7 +202,7 @@
   }
   .fixture_graphic_container_desktop h3 {
     font-size: 5rem;
-    line-height: 4.5rem;
+    line-height: 5rem;
     letter-spacing: 6px;
     margin-bottom: var(--margin--24);
   }

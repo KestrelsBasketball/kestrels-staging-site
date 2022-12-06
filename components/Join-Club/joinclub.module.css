@@ -6,7 +6,7 @@
   padding: 50px;
   border-radius: 8px;
   margin: 0 auto;
-  background-color: white;
+  background-color: #363636;
   margin-top: var(--section--margin--200);
   margin-bottom: var(--section--margin--200);
 }
@@ -25,7 +25,7 @@
   line-height: 5rem;
   letter-spacing: 10px;
   text-align: center;
-  color: var(--text-grey--);
+  color: white;
 }
 .container span {
   font-size: 3rem;

@@ -180,14 +180,15 @@
   }
   .results_title_header_container {
     width: 60vw;
-    height: 60vh;
+    height: 35vh;
+    margin-top: var(--margin--16);
   }
 }
 
 @media only screen and (max-width: 650px) {
   .results_title_header_container {
     width: 80vw;
-    height: 35vh;
+    height: 30vh;
     background-image: url("/Fixtures_player_mobile.png");
   }
 
@@ -206,6 +207,6 @@
 @media only screen and (max-width: 425px) {
   .results_title_header_container {
     width: 80vw;
-    height: 35vh;
+    height: 30vh;
   }
 }

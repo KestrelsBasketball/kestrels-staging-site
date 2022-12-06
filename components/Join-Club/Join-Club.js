@@ -6,7 +6,9 @@ export default function JoinClub() {
       <div className={styles.container}>
         <div className={styles.join_img_container}></div>
         <div>
-          <h4>Join the Club</h4>
+          <h4>
+            Join <span>the </span>Club
+          </h4>
         </div>
         <div className={styles.join_btn_container}>
           <button>Become a Member</button>
