@@ -1,6 +1,6 @@
 import styles from "./desktop.module.css";
 
-import { Dropdown, Image, Navbar, Link } from "@nextui-org/react";
+import { Dropdown, Image, Navbar, Link, useTheme } from "@nextui-org/react";
 
 export default function Desktopnav() {
   return (
@@ -114,32 +114,53 @@ export default function Desktopnav() {
                 <div className={styles.mobile_nav_links_container}>
                   <Link
                     href="/"
-                    css={{ color: "$myWhite" }}
+                    css={{
+                      color: "$myWhite",
+                      "&:hover": {
+                        color: "$myRed",
+                      },
+                    }}
                     className={styles.mobile_nav_link}
                   >
                     Home
                   </Link>
                   <Link
                     href="/Fixtures"
-                    css={{ color: "$myWhite" }}
+                    css={{
+                      color: "$myWhite",
+                      "&:hover": {
+                        color: "$myRed",
+                      },
+                    }}
                     className={styles.mobile_nav_link}
                   >
                     Fixtures
                   </Link>
                   <Link
                     href="/Result"
-                    css={{ color: "$myWhite" }}
+                    css={{
+                      color: "$myWhite",
+                      "&:hover": {
+                        color: "$myRed",
+                      },
+                    }}
                     className={styles.mobile_nav_link}
                   >
                     Results
                   </Link>
                   <Link
                     href="/Staff"
-                    css={{ color: "$myWhite" }}
+                    css={{
+                      color: "$myWhite",
+                      "&:hover": {
+                        color: "$myRed",
+                      },
+                    }}
                     className={styles.mobile_nav_link}
                   >
                     Staff
                   </Link>
+                  <div>Documents</div>
                   <div className={styles.docs_mobile_container}></div>
                 </div>
               </Navbar.CollapseItem>
