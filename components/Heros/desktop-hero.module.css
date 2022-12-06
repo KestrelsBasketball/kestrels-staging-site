@@ -92,7 +92,7 @@
     font-size: 7rem;
     letter-spacing: 14px;
     margin-top: var(--margin--24);
-    margin-bottom: var(--margin--24);
+    margin-bottom: var(--margin--16);
   }
 }
 @media only screen and (max-width: 650px) {
@@ -103,10 +103,10 @@
     background-image: none;
   }
   .hero_text h2 {
-    font-size: 6rem;
-    line-height: 6rem;
+    font-size: 5rem;
+    line-height: 5rem;
     letter-spacing: 10px;
-    margin-top: var(--margin--12);
+    margin-top: var(--margin--24);
     margin-bottom: var(--margin--12);
   }
   .hero_img {

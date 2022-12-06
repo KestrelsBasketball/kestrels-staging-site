@@ -58,7 +58,7 @@
     margin-top: 0;
   }
 }
-@media only screen and (max-width: 804px) {
+@media only screen and (max-width: 840px) {
   .text_content_styles h2 {
     font-size: 3rem;
     line-height: 3rem;

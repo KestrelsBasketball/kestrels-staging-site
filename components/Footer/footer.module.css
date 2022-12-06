@@ -3,6 +3,10 @@
   background-color: #242323;
   padding: 40px;
 }
+.footer_logo img {
+  width: 60%;
+  height: 170px;
+}
 .footer_container {
   display: flex;
   width: 90vw;
@@ -26,12 +30,12 @@
   font-size: 1rem;
 }
 .links_footer {
-  color: white;
+  color: white !important;
   padding-left: 5px;
   text-decoration: underline;
 }
 .links_footer:hover {
-  color: #cc1c1c;
+  color: #cc1c1c !important;
 }
 .footer_page_links_container {
   margin-top: 25px;
@@ -57,7 +61,7 @@
   color: white;
 }
 .footer_page_link:hover {
-  color: #cc1c1c;
+  color: #cc1c1c !important;
 }
 .document_links_container {
   width: 30vw;
@@ -76,7 +80,7 @@
   color: white;
 }
 .doc_links:hover {
-  color: #cc1c1c;
+  color: #cc1c1c !important;
 }
 .footer_year {
   width: 90vw;

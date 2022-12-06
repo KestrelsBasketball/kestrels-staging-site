@@ -2,6 +2,7 @@ import styles from "../styles/resultspage.module.css";
 import { Grid } from "@nextui-org/react";
 import JoinClub from "@/components/Join-Club/Join-Club";
 import Sponsors from "@/components/Sponsors/sponsors";
+import Footer from "@/components/Footer/Footer";
 
 import { API_URL } from "@config/index";
 import { GraphQLClient } from "graphql-request";
@@ -83,6 +84,9 @@ export default function Results(props) {
       </div>
       <div>
         <Sponsors sponsors={sponsors} />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

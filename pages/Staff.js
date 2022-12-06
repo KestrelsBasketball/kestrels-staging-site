@@ -5,6 +5,7 @@ import { API_URL } from "@config/index";
 import { GraphQLClient } from "graphql-request";
 
 import History from "@/components/Club-History/History";
+import Footer from "@/components/Footer/Footer";
 
 export default function Staff(props) {
   const { staffMembers } = props;
@@ -30,6 +31,9 @@ export default function Staff(props) {
       </div>
       <div>
         <History />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );

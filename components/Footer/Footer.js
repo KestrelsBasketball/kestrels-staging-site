@@ -11,7 +11,10 @@ export default function Footer() {
             <Grid xs={4} sm={4}>
               <div className={styles.footer_brand_container}>
                 <div className={styles.logo_container}>
-                  <Image src="./Logo_footer.png" />
+                  <Image
+                    src="./Logo_footer.png"
+                    className={styles.footer_logo}
+                  />
                 </div>
                 <div className={styles.contact_details_container}>
                   <h5>Portarlington Co Laois</h5>

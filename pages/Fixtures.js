@@ -1,6 +1,7 @@
 import styles from "../styles/fixturespage.module.css";
 import JoinClub from "@/components/Join-Club/Join-Club";
 import Sponsors from "@/components/Sponsors/sponsors";
+import Footer from "@/components/Footer/Footer";
 
 import { API_URL } from "@config/index";
 import { GraphQLClient } from "graphql-request";
@@ -93,6 +94,9 @@ export default function Fixtures(props) {
       </div>
       <div>
         <Sponsors sponsors={sponsors} />
+      </div>
+      <div>
+        <Footer />
       </div>
     </div>
   );
