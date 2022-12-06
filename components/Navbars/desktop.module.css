@@ -61,4 +61,9 @@
   .outer_container {
     display: none;
   }
+  .mobile_logo_inner_container {
+    width: 25vw;
+    margin: 0 auto;
+    padding-right: 22px;
+  }
 }
