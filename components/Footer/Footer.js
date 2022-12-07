@@ -14,6 +14,7 @@ export default function Footer() {
                   <Image
                     src="./Logo_footer.png"
                     className={styles.footer_logo}
+                    alt="Kestrels Logo"
                   />
                 </div>
                 <div className={styles.contact_details_container}>

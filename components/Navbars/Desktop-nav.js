@@ -106,7 +106,7 @@ export default function Desktopnav() {
                         target="_blank"
                         className={styles.dropdown_links}
                       >
-                        Player's Code of Conduct
+                        Players Code of Conduct
                       </Link>
                     </Dropdown.Item>
                     <Dropdown.Item>
@@ -124,7 +124,7 @@ export default function Desktopnav() {
                         target="_blank"
                         className={styles.dropdown_links}
                       >
-                        Senior reg Form Agreement
+                        Senior Reg Form Agreement
                       </Link>
                     </Dropdown.Item>
                   </Dropdown.Menu>

@@ -15,7 +15,10 @@ export default function Staff(props) {
         {staffMembers.map((staffMembers) => (
           <div className={styles.staff_card} key={staffMembers.id}>
             <div className={styles.members_profile_img}>
-              <Image src={staffMembers.profileImage.url} />
+              <Image
+                src={staffMembers.profileImage.url}
+                alt="Staff Profile Pic"
+              />
             </div>
             <div>
               <h3>{staffMembers.position}</h3>
