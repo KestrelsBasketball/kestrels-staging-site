@@ -209,6 +209,6 @@
 @media only screen and (max-width: 425px) {
   .results_title_header_container {
     width: 80vw;
-    height: 50vh;
+    height: 35vh;
   }
 }
