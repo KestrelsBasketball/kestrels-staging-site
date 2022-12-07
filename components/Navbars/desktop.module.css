@@ -30,6 +30,9 @@
 .links_styles:hover {
   color: #e90d0d !important;
 }
+.dropdown_links {
+  color: #2e2f30 !important;
+}
 @media only screen and (max-width: 768px) {
   .outer_container {
     display: none;

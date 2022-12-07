@@ -70,11 +70,63 @@ export default function Desktopnav() {
                   >
                     Documents
                   </Dropdown.Button>
-                  <Dropdown.Menu css={{ borderRadius: "3px" }}>
-                    <Dropdown.Item>Doc one</Dropdown.Item>
-                    <Dropdown.Item>Doc Two</Dropdown.Item>
-                    <Dropdown.Item>Doc Three</Dropdown.Item>
-                    <Dropdown.Item>Doc Four</Dropdown.Item>
+                  <Dropdown.Menu
+                    css={{ borderRadius: "3px", minWidth: "280px" }}
+                  >
+                    <Dropdown.Item>
+                      <Link
+                        href="https://google.com"
+                        target="_blank"
+                        className={styles.dropdown_links}
+                      >
+                        Mission Statement
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="https://google.com"
+                        target="_blank"
+                        className={styles.dropdown_links}
+                      >
+                        Registration Fees
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="https://google.com"
+                        target="_blank"
+                        className={styles.dropdown_links}
+                      >
+                        Club Constitution
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="https://forms.gle/LMNGMb2oKzyT1Q666"
+                        target="_blank"
+                        className={styles.dropdown_links}
+                      >
+                        Player's Code of Conduct
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="https://google.com"
+                        target="_blank"
+                        className={styles.dropdown_links}
+                      >
+                        Juvenile Reg Form Agreement
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="https://google.com"
+                        target="_blank"
+                        className={styles.dropdown_links}
+                      >
+                        Senior reg Form Agreement
+                      </Link>
+                    </Dropdown.Item>
                   </Dropdown.Menu>
                 </Dropdown>
               </li>
