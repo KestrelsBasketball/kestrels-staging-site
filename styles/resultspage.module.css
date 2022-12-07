@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: flex-end;
   width: 35vw;
-  height: 45vh;
+  height: 50vh;
   margin: 0 auto;
   margin-top: var(--section--margin--100);
   margin-bottom: var(--margin--24);
@@ -134,7 +134,16 @@
 .Team_B h5 {
   margin: 0;
 }
-
+@media only screen and (max-width: 1024px) {
+  .result_outer_container {
+    width: 70vw;
+  }
+  .results_title_header_container {
+    width: 50vw;
+    height: 50vh;
+    margin-top: var(--section--margin--100);
+  }
+}
 @media only screen and (max-width: 960px) {
   .scores_content_container h5 {
     font-size: 1.25rem;
@@ -152,17 +161,10 @@
     -webkit-text-stroke-width: 1px;
   }
 }
-@media only screen and (max-width: 860px) {
-  .scores_content_container h5 {
-    font-size: 1rem;
-    line-height: 1rem;
-    margin: 0;
-    min-width: 170px;
-  }
-}
+
 @media only screen and (max-width: 840px) {
   .results_title_header_container {
-    width: 50vw;
+    width: 65vw;
     height: 50vh;
   }
   .result_outer_container {
@@ -180,15 +182,15 @@
   }
   .results_title_header_container {
     width: 60vw;
-    height: 35vh;
-    margin-top: var(--margin--16);
+    height: 60vh;
+    margin-top: var(--section--margin--100);
   }
 }
 
 @media only screen and (max-width: 650px) {
   .results_title_header_container {
     width: 80vw;
-    height: 30vh;
+    height: 50vh;
     background-image: url("/Fixtures_player_mobile.png");
   }
 
@@ -207,6 +209,6 @@
 @media only screen and (max-width: 425px) {
   .results_title_header_container {
     width: 80vw;
-    height: 30vh;
+    height: 50vh;
   }
 }

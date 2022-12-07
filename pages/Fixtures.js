@@ -5,6 +5,7 @@ import Footer from "@/components/Footer/Footer";
 
 import { API_URL } from "@config/index";
 import { GraphQLClient } from "graphql-request";
+import { format } from "date-fns";
 
 export default function Fixtures(props) {
   const { fixtures } = props;
@@ -13,7 +14,7 @@ export default function Fixtures(props) {
   return (
     <div>
       <div className={styles.fixture_title_header_container}>
-        <h4>Up Comming</h4>
+        <h4>Upcoming</h4>
         <h3>Fixtures</h3>
       </div>
       <div className={styles.fixtures_desktop_layout}>
@@ -42,7 +43,7 @@ export default function Fixtures(props) {
                     <h6>{fixtures.location}</h6>
                   </div>
                   <div>
-                    <h6>{fixtures.date}</h6>
+                    <h6>{format(new Date(fixtures.date), "qo MMM, yyyy")}</h6>
                   </div>
                   <div>
                     <h6>{fixtures.time}</h6>
@@ -78,7 +79,7 @@ export default function Fixtures(props) {
                     <h4>{fixtures.location}</h4>
                   </div>
                   <div>
-                    <h5>{fixtures.date}</h5>
+                    <h5>{format(new Date(fixtures.date), "qo MMM, yyyy")}</h5>
                   </div>
                   <div>
                     <h4>{fixtures.time}</h4>

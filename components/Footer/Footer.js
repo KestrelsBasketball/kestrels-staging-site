@@ -21,10 +21,10 @@ export default function Footer() {
                   <p>
                     Email:
                     <a
-                      href="mailto:kestrelsbaskballclub@gmail.com"
+                      href="mailto:kestrelsbasketballclub@gmail.com"
                       className={styles.links_footer}
                     >
-                      kestrelsbaskballclub@gmail.com
+                      kestrelsbasketballclub@gmail.com
                     </a>
                   </p>
                   <p>

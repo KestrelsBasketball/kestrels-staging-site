@@ -7,6 +7,7 @@ import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 import "swiper/css/scrollbar";
+import { format } from "date-fns";
 
 import { API_URL } from "@config/index";
 import { GraphQLClient } from "graphql-request";
@@ -49,7 +50,9 @@ export default function FixturesLimited(props) {
                       </div>
                       <div className={styles.game_details_container}>
                         <div>{fixtures.location}</div>
-                        <div>{fixtures.date}</div>
+                        <div>
+                          {format(new Date(fixtures.date), "qo MMM, yyyy")}
+                        </div>
                         <div>{fixtures.time}</div>
                       </div>
                     </div>
@@ -95,7 +98,7 @@ export default function FixturesLimited(props) {
                       <h4>{fixtures.location}</h4>
                     </div>
                     <div>
-                      <h5>{fixtures.date}</h5>
+                      <h5>{format(new Date(fixtures.date), "qo MMM, yyyy")}</h5>
                     </div>
                     <div>
                       <h6>{fixtures.time}</h6>

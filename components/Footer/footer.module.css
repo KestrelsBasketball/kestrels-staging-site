@@ -91,10 +91,9 @@
 .small_print_container {
   display: flex;
   justify-content: space-between;
+  margin-top: 8px;
 }
-.small_print_container h6 {
-  margin: 8px 0 8px 0;
-}
+
 hr.hr_border {
   width: 90vw;
   border: 1px solid #727272;

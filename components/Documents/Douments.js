@@ -1,5 +1,5 @@
 import styles from "./douments.module.css";
-import { Grid, Row, Col } from "@nextui-org/react";
+import { Grid, Row, Col, Link } from "@nextui-org/react";
 
 export default function Douments() {
   return (
@@ -15,6 +15,7 @@ export default function Douments() {
                 <h4>Statement</h4>
               </div>
               <div className={styles.btn_view_doc}>
+                <Link href=""></Link>
                 <button>View</button>
               </div>
             </div>
