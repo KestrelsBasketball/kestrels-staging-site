@@ -1,0 +1,19 @@
+.container {
+  width: 90vw;
+  margin: 0 auto;
+  margin-top: var(--section--margin--100);
+  margin-bottom: var(--section--margin--100);
+  color: white;
+}
+.container h2 {
+  font-size: 3rem;
+  color: var(--btn-red-color);
+}
+.rich_content_styles h5 {
+  margin-top: var(--margin-8);
+  margin-top: var(--margin--16);
+  color: white;
+}
+.rich_content_styles p {
+  margin-bottom: var(--margin--8);
+}

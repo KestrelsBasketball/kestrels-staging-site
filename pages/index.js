@@ -28,9 +28,6 @@ export default function Home(props) {
         <DesktopHero />
       </div>
       <div>
-        <Sponsors sponsors={sponsors} />
-      </div>
-      <div>
         <Fixtures fixtures={fixtures} />
       </div>
       <div>
@@ -41,6 +38,9 @@ export default function Home(props) {
       </div>
       <div>
         <History />
+      </div>
+      <div>
+        <Sponsors sponsors={sponsors} />
       </div>
       <div>
         <Footer />

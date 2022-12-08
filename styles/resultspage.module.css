@@ -134,6 +134,11 @@
 .Team_B h5 {
   margin: 0;
 }
+@media only screen and (max-width: 1140px) {
+  .result_outer_container {
+    width: 70vw;
+  }
+}
 @media only screen and (max-width: 1024px) {
   .result_outer_container {
     width: 70vw;
@@ -161,7 +166,8 @@
     -webkit-text-stroke-width: 1px;
   }
 }
-
+@media only screen and (max-width: 1140px) {
+}
 @media only screen and (max-width: 840px) {
   .results_title_header_container {
     width: 65vw;

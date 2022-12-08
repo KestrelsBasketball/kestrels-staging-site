@@ -75,7 +75,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        href="https://en.wikipedia.org/wiki/Next.js"
+                        href="https://www.google.com"
                         className={styles.doc_links}
                         target="_blank"
                       >
@@ -84,7 +84,16 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        href="https://en.wikipedia.org/wiki/Next.js"
+                        href="https://www.google.com"
+                        className={styles.doc_links}
+                        target="_blank"
+                      >
+                        Club Constitution
+                      </Link>
+                    </li>
+                    <li>
+                      <Link
+                        href="https://www.google.com"
                         className={styles.doc_links}
                         target="_blank"
                       >
@@ -106,7 +115,7 @@ export default function Footer() {
                         className={styles.doc_links}
                         target="_blank"
                       >
-                        Parents Code Constitution
+                        Parents Code of Conduct
                       </Link>
                     </li>
                     <li>

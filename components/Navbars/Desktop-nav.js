@@ -74,12 +74,16 @@ export default function Desktopnav() {
                     css={{ borderRadius: "3px", minWidth: "280px" }}
                   >
                     <Dropdown.Item>
+                      <Link href="/Mission" className={styles.dropdown_links}>
+                        Mission Statement
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
                       <Link
-                        href="https://google.com"
-                        target="_blank"
+                        href="/Constitution"
                         className={styles.dropdown_links}
                       >
-                        Mission Statement
+                        Club Constitution
                       </Link>
                     </Dropdown.Item>
                     <Dropdown.Item>
@@ -115,7 +119,25 @@ export default function Desktopnav() {
                         target="_blank"
                         className={styles.dropdown_links}
                       >
+                        Parents Code of Conduct
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="https://google.com"
+                        target="_blank"
+                        className={styles.dropdown_links}
+                      >
                         Juvenile Reg Form Agreement
+                      </Link>
+                    </Dropdown.Item>
+                    <Dropdown.Item>
+                      <Link
+                        href="https://google.com"
+                        target="_blank"
+                        className={styles.dropdown_links}
+                      >
+                        Juvenile U12 Form Agreement
                       </Link>
                     </Dropdown.Item>
                     <Dropdown.Item>

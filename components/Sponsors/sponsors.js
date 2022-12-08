@@ -9,18 +9,18 @@ export default function Sponsors(props) {
   return (
     <div>
       <div className={styles.container}>
-        <Grid.Container>
-          <Grid xs={12} sm={3} md={3} className={styles.sponsor_img}>
+        <Grid.Container justify="center" align="center">
+          <Grid xs={12} sm={2} md={3} className={styles.sponsor_img}>
             <Image
               showSkeleton
               src="https://res.cloudinary.com/dk5prkqtv/image/upload/v1669298046/site/Sponsors_graphic_rdpani.png"
               alt="sponsors graphic"
             />
           </Grid>
-          <Grid xs={12} sm={9} md={9} className={styles.sponsors_list}>
-            <Row gap={1}>
+          <Grid xs={12} sm={3} md={3} className={styles.sponsors_list}>
+            <div>
               {sponsors.map((sponsors) => (
-                <Col justify="center" align="center" key={sponsors.id}>
+                <div key={sponsors.id}>
                   <div>
                     <Image
                       showSkeleton
@@ -32,9 +32,9 @@ export default function Sponsors(props) {
                   <div>
                     <span>{sponsors.name}</span>
                   </div>
-                </Col>
+                </div>
               ))}
-            </Row>
+            </div>
           </Grid>
         </Grid.Container>
       </div>
