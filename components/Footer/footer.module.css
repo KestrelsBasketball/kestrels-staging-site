@@ -120,7 +120,7 @@ hr.hr_border {
     display: none;
   }
   .footer_brand_container {
-    padding: 20px;
+    padding: 0;
   }
   .container {
     padding: 20px;
@@ -137,6 +137,11 @@ hr.hr_border {
   .document_links_container {
     order: 1;
     width: 40vw;
+  }
+}
+@media only screen and (max-width: 650px) {
+  .container {
+    padding: 0;
   }
 }
 @media only screen and (max-width: 425px) {

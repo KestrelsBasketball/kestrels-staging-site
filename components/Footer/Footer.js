@@ -74,20 +74,12 @@ export default function Footer() {
                       <h5>Documents</h5>
                     </li>
                     <li>
-                      <Link
-                        href="https://www.google.com"
-                        className={styles.doc_links}
-                        target="_blank"
-                      >
+                      <Link href="/Mission" className={styles.doc_links}>
                         Mission Statment
                       </Link>
                     </li>
                     <li>
-                      <Link
-                        href="https://www.google.com"
-                        className={styles.doc_links}
-                        target="_blank"
-                      >
+                      <Link href="/Constitution" className={styles.doc_links}>
                         Club Constitution
                       </Link>
                     </li>
@@ -102,7 +94,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        href="https://en.wikipedia.org/wiki/Next.js"
+                        href="https://forms.gle/LMNGMb2oKzyT1Q666"
                         className={styles.doc_links}
                         target="_blank"
                       >
@@ -111,7 +103,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        href="https://en.wikipedia.org/wiki/Next.js"
+                        href="https://forms.gle/LMNGMb2oKzyT1Q666"
                         className={styles.doc_links}
                         target="_blank"
                       >
@@ -120,7 +112,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        href="https://en.wikipedia.org/wiki/Next.js"
+                        href="https://forms.gle/prEtcnjaJGoX4SDq9"
                         className={styles.doc_links}
                         target="_blank"
                       >
@@ -129,7 +121,7 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        href="https://en.wikipedia.org/wiki/Next.js"
+                        href="https://forms.gle/Bt46LcmZ6PRAxdTM7"
                         className={styles.doc_links}
                         target="_blank"
                       >

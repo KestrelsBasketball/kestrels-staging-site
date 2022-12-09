@@ -228,4 +228,7 @@
     margin-top: var(--margin--16);
     justify-content: flex-end;
   }
+  .view_more_link {
+    margin-right: 0;
+  }
 }

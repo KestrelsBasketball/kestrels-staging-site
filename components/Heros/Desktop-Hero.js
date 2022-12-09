@@ -10,7 +10,7 @@ export default function DesktopHero() {
               <h1>Kestrels</h1>
               <h2>Basketball</h2>
               <h3>Club Portarlington</h3>
-              <button className={styles.btn_join}>Join the Club</button>
+              {/* <button className={styles.btn_join}>Join the Club</button> */}
             </div>
           </Grid>
           <Grid xs={12} sm={6} md={6} className={styles.hero_image}>

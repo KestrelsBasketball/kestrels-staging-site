@@ -97,15 +97,6 @@ export default function Desktopnav() {
                     </Dropdown.Item>
                     <Dropdown.Item>
                       <Link
-                        href="https://google.com"
-                        target="_blank"
-                        className={styles.dropdown_links}
-                      >
-                        Club Constitution
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link
                         href="https://forms.gle/LMNGMb2oKzyT1Q666"
                         target="_blank"
                         className={styles.dropdown_links}
@@ -115,7 +106,7 @@ export default function Desktopnav() {
                     </Dropdown.Item>
                     <Dropdown.Item>
                       <Link
-                        href="https://google.com"
+                        href="https://forms.gle/oNRMAo49Ce8PSvXY7"
                         target="_blank"
                         className={styles.dropdown_links}
                       >
@@ -124,7 +115,7 @@ export default function Desktopnav() {
                     </Dropdown.Item>
                     <Dropdown.Item>
                       <Link
-                        href="https://google.com"
+                        href="https://forms.gle/prEtcnjaJGoX4SDq9"
                         target="_blank"
                         className={styles.dropdown_links}
                       >
@@ -133,7 +124,7 @@ export default function Desktopnav() {
                     </Dropdown.Item>
                     <Dropdown.Item>
                       <Link
-                        href="https://google.com"
+                        href="https://forms.gle/rrLVqvwjLC5Uj9sc6"
                         target="_blank"
                         className={styles.dropdown_links}
                       >
@@ -142,7 +133,7 @@ export default function Desktopnav() {
                     </Dropdown.Item>
                     <Dropdown.Item>
                       <Link
-                        href="https://google.com"
+                        href="https://forms.gle/Bt46LcmZ6PRAxdTM7"
                         target="_blank"
                         className={styles.dropdown_links}
                       >
