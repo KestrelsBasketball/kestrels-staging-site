@@ -22,21 +22,6 @@ export default function Douments() {
               </div>
             </div>
           </Grid>
-          <Grid xs={12} sm={6} md={6}>
-            <div className={styles.col_doc_container}>
-              <div>
-                <h3>Registration</h3>
-              </div>
-              <div>
-                <h4>Fees</h4>
-              </div>
-              <div className={styles.btn_view_doc}>
-                <button>View</button>
-              </div>
-            </div>
-          </Grid>
-        </Grid.Container>
-        <Grid.Container>
           <Grid xs={12} sm={6} md={6} className={styles.row_doc_container}>
             <div className={styles.col_doc_container}>
               <div>
@@ -52,6 +37,26 @@ export default function Douments() {
               </div>
             </div>
           </Grid>
+        </Grid.Container>
+        <Grid.Container>
+          <Grid xs={12} sm={6} md={6} className={styles.row_doc_container}>
+            <div className={styles.col_doc_container}>
+              <div>
+                <h3>Parents</h3>
+              </div>
+              <div>
+                <h4>Code of Conduct</h4>
+              </div>
+              <div className={styles.btn_view_doc}>
+                <Link
+                  href="https://forms.gle/oNRMAo49Ce8PSvXY7"
+                  target="_blank"
+                >
+                  <button>View</button>
+                </Link>
+              </div>
+            </div>
+          </Grid>
           <Grid xs={12} sm={6} md={6}>
             <div className={styles.col_doc_container}>
               <div>
@@ -61,7 +66,12 @@ export default function Douments() {
                 <h4>Code of Conduct</h4>
               </div>
               <div className={styles.btn_view_doc}>
-                <button>View</button>
+                <Link
+                  href="https://forms.gle/LMNGMb2oKzyT1Q666"
+                  target="_blank"
+                >
+                  <button>View</button>
+                </Link>
               </div>
             </div>
           </Grid>

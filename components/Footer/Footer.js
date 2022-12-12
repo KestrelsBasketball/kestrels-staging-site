@@ -85,15 +85,6 @@ export default function Footer() {
                     </li>
                     <li>
                       <Link
-                        href="https://www.google.com"
-                        className={styles.doc_links}
-                        target="_blank"
-                      >
-                        Registration Free
-                      </Link>
-                    </li>
-                    <li>
-                      <Link
                         href="https://forms.gle/LMNGMb2oKzyT1Q666"
                         className={styles.doc_links}
                         target="_blank"

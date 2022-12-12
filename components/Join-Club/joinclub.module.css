@@ -3,7 +3,7 @@
   flex-direction: column;
   justify-content: center;
   width: 80vw;
-  padding: 50px 50px 70px 50px;
+  padding: 50px;
   border-radius: 8px;
   margin: 0 auto;
   background-color: #2a2929;
@@ -77,6 +77,10 @@
   .container h3 {
     font-size: 3.5rem;
     line-height: 3.5rem;
+  }
+  .container p {
+    font-size: 1.2rem;
+    width: 70vw;
   }
   .join_btn_container button {
     width: 35vw;

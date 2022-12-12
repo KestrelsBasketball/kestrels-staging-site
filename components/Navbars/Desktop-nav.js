@@ -2,6 +2,7 @@ import styles from "./desktop.module.css";
 
 import { Dropdown, Image } from "@nextui-org/react";
 import Link from "next/link";
+
 export default function Desktopnav() {
   return (
     <div>
@@ -84,15 +85,6 @@ export default function Desktopnav() {
                         className={styles.dropdown_links}
                       >
                         Club Constitution
-                      </Link>
-                    </Dropdown.Item>
-                    <Dropdown.Item>
-                      <Link
-                        href="https://google.com"
-                        target="_blank"
-                        className={styles.dropdown_links}
-                      >
-                        Registration Fees
                       </Link>
                     </Dropdown.Item>
                     <Dropdown.Item>

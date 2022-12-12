@@ -8,6 +8,7 @@ import ResultsLimited from "@/components/Results/Results";
 import Douments from "@/components/Documents/Douments";
 import History from "@/components/Club-History/History";
 import Footer from "@/components/Footer/Footer";
+import JoinClub from "@/components/Join-Club/Join-Club";
 
 import { API_URL } from "@config/index";
 import { GraphQLClient } from "graphql-request";
@@ -38,6 +39,9 @@ export default function Home(props) {
       </div>
       <div>
         <History />
+      </div>
+      <div>
+        <JoinClub />
       </div>
       <div>
         <Sponsors sponsors={sponsors} />

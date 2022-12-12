@@ -106,9 +106,31 @@ export default function MobileNav() {
                     Staff
                   </Link>
                   <div>Documents</div>
-                  <div className={styles.docs_mobile_container}>
+                  <div className={styles.docs_links_mobile_container}>
                     <ul>
-                      <li>KK</li>
+                      <li>
+                        <Link href="/Mission">Mission Statement</Link>
+                      </li>
+                      <li>
+                        <Link href="/Constitution">Club Constitution</Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="https://forms.gle/LMNGMb2oKzyT1Q666"
+                          target="_blank"
+                        >
+                          Players Code of Conduct
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="https://forms.gle/oNRMAo49Ce8PSvXY7"
+                          target="_blank"
+                          className={styles.dropdown_links}
+                        >
+                          Parents Code of Conduct
+                        </Link>
+                      </li>
                     </ul>
                   </div>
                 </div>
