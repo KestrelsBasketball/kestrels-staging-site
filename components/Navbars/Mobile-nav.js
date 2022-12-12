@@ -19,7 +19,7 @@ export default function MobileNav() {
               />
               <div className={styles.mobile_logo}>
                 <div className={styles.mobile_logo_inner_container}>
-                  <Link href="./">
+                  <Link href="/">
                     <Image src="/Logo_mobile.png" alt="Kestrels Logo" />
                   </Link>
                 </div>
@@ -129,6 +129,33 @@ export default function MobileNav() {
                           className={styles.dropdown_links}
                         >
                           Parents Code of Conduct
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="https://forms.gle/prEtcnjaJGoX4SDq9"
+                          target="_blank"
+                          className={styles.dropdown_links}
+                        >
+                          Juvenile Reg Form Agreement
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="https://forms.gle/rrLVqvwjLC5Uj9sc6"
+                          target="_blank"
+                          className={styles.dropdown_links}
+                        >
+                          Juvenile U12 Form Agreement
+                        </Link>
+                      </li>
+                      <li>
+                        <Link
+                          href="https://forms.gle/Bt46LcmZ6PRAxdTM7"
+                          target="_blank"
+                          className={styles.dropdown_links}
+                        >
+                          Senior Reg Form Agreement
                         </Link>
                       </li>
                     </ul>

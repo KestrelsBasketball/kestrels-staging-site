@@ -17,6 +17,11 @@ export default function Results(props) {
             className={styles.results_container_order}
           >
             <div className={styles.results_desktop_container}>
+              {result.lenght === 0 && (
+                <div className={styles.no_data}>
+                  <h2>No Results</h2>
+                </div>
+              )}
               <ul>
                 {result.map((result) => (
                   <li key={result.id}>

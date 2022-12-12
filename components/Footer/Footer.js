@@ -134,7 +134,11 @@ export default function Footer() {
                   </small>
                 </div>
                 <div>
-                  <small>Made by SHANE</small>
+                  <small>
+                    <Link href="http://shanemurphy.design" target="_blank">
+                      Made by SHANE
+                    </Link>
+                  </small>
                 </div>
               </div>
             </div>

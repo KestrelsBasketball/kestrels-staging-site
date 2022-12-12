@@ -160,7 +160,14 @@
 .view_more_btn_container_mobile {
   display: none;
 }
-
+.no_data {
+  width: 70vw;
+  margin: 0 auto;
+  display: block !important;
+}
+.no_data h2 {
+  color: #f99705;
+}
 @media only screen and (max-width: 1280px) {
   .results_container h5 {
     min-width: 220px;

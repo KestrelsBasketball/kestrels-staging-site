@@ -5,8 +5,8 @@
   color: white;
 }
 .docs_links_mobile_container li {
-  font-size: 1.3rem;
-  margin-top: var(--margin--16);
+  font-size: 1.2rem;
+  margin-top: var(--margin--8);
 }
 @media only screen and (max-width: 768px) {
   .nav_mobile_container {
