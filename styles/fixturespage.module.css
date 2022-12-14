@@ -165,8 +165,8 @@
     line-height: 1rem;
   }
   .fixture_title_header_container {
-    width: 60vw;
-    height: 70vh;
+    width: 65vw;
+    height: 95vh;
     margin-top: var(--section--margin--80);
   }
   .fixture_container h4 {

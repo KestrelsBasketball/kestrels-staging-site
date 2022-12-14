@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "./douments.module.css";
 import { Grid } from "@nextui-org/react";
 import Link from "next/link";
