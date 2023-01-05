@@ -51,7 +51,7 @@ export default function FixturesLimited(props) {
                       <div className={styles.game_details_container}>
                         <div>{fixtures.location}</div>
                         <div>
-                          {format(new Date(fixtures.date), "qo MMM, yyyy")}
+                          {format(new Date(fixtures.date), "dd-LLL-yyyy")}
                         </div>
                         <div>{fixtures.time}</div>
                       </div>
@@ -123,7 +123,7 @@ export async function getStaticProps() {
   const { fixtures } = await hygraph.request(
     `
     {
-      fixtures {
+      fixtures(orderBy: createdAt_DESC) {
         id
         teamA
         teamB

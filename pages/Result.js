@@ -32,9 +32,9 @@ export default function Results(props) {
                         <h6>{result.tournament}</h6>
                       </div>
                       <div className={styles.score_values}>
-                        <h4>50</h4>
+                        <h4>{result.teamAScore}</h4>
                         <h4>-</h4>
-                        <h4>60</h4>
+                        <h4>{result.teamBScore}</h4>
                       </div>
                     </div>
                     <div>
@@ -96,7 +96,7 @@ export async function getStaticProps() {
   const { result, sponsors } = await hygraph.request(
     `
       {
-        result {
+        result(orderBy: createdAt_DESC) {
           id
           teamA
           teamAScore
