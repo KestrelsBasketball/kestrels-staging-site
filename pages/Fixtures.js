@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "../styles/fixturespage.module.css";
 import JoinClub from "@/components/Join-Club/Join-Club";
 import Sponsors from "@/components/Sponsors/sponsors";
@@ -13,6 +14,20 @@ export default function Fixtures(props) {
 
   return (
     <div>
+      <Head>
+        <title>
+          Latest Fixtures Kestrels Basketball Club Portarlington, Laois, Ireland
+        </title>
+        <meta
+          name="description"
+          content="Kestrels Fixtures, Kestrels Basketball Club, Portarlington, Laois, Ireland"
+        />
+        <meta
+          name="keywords"
+          content="Results, Kestrels Basketball Club, Basketball, Portarlington, Sports, Laois, Ireland"
+        ></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.fixture_title_header_container}>
         <h4>Upcoming</h4>
         <h3>Fixtures</h3>

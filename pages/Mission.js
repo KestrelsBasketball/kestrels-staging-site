@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "../styles/mission.module.css";
 import Footer from "@/components/Footer/Footer";
 
@@ -10,6 +11,18 @@ export default function Mission(props) {
   const { missions } = props;
   return (
     <div>
+      <Head>
+        <title>Mission Statement Kestrels Basketball Club Portarlington, Laois, Ireland</title>
+        <meta
+          name="description"
+          content="Kestrels Basketball Club, Portarlington, Laois, Ireland"
+        />
+        <meta
+          name="keywords"
+          content="Kestrels Basketball Club, Basketball, Portarlington, Sports, Laois, Ireland"
+        ></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.container}>
         <div className={styles.mission_content}>
           {missions.map((missions) => (

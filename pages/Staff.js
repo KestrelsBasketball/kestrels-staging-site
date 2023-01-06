@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "../styles/staff.module.css";
 import { Grid, Image } from "@nextui-org/react";
 
@@ -11,6 +12,21 @@ export default function Staff(props) {
   const { staffMembers } = props;
   return (
     <div>
+      <Head>
+        <title>
+          Staff Members Kestrels Basketball Club Constitution, Portarlington,
+          Laois, Ireland
+        </title>
+        <meta
+          name="description"
+          content="Kestrel Staff Members. Kestrels Basketball Club, Portarlington, Laois, Ireland"
+        />
+        <meta
+          name="keywords"
+          content="Kestrel Staff, Kestrels Basketball Club, Basketball, Portarlington, Sports, Laois, Ireland"
+        ></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.container}>
         {staffMembers.map((staffMembers) => (
           <div className={styles.staff_card} key={staffMembers.id}>

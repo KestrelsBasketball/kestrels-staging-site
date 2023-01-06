@@ -1,3 +1,4 @@
+import Head from "next/head";
 import styles from "../styles/resultspage.module.css";
 import { Grid } from "@nextui-org/react";
 import JoinClub from "@/components/Join-Club/Join-Club";
@@ -12,6 +13,20 @@ export default function Results(props) {
   const { sponsors } = props;
   return (
     <div>
+      <Head>
+        <title>
+          Latest Results Kestrels Basketball Club Portarlington, Laois, Ireland
+        </title>
+        <meta
+          name="description"
+          content="Kestrels Results, Kestrels Basketball Club, Portarlington, Laois, Ireland"
+        />
+        <meta
+          name="keywords"
+          content="Results, Kestrels Basketball Club, Basketball, Portarlington, Sports, Laois, Ireland"
+        ></meta>
+        <link rel="icon" href="/favicon.ico" />
+      </Head>
       <div className={styles.results_title_header_container}>
         <h4>Latast</h4>
         <h3>Results</h3>
