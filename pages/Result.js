@@ -15,11 +15,11 @@ export default function Results(props) {
     <div>
       <Head>
         <title>
-          Latest Results Kestrels Basketball Club Portarlington, Laois, Ireland
+          Latest Results Kestrels Basketball Club Portarlington, Co Offaly, Ireland
         </title>
         <meta
           name="description"
-          content="Kestrels Results, Kestrels Basketball Club, Portarlington, Laois, Ireland"
+          content="Kestrels Results, Kestrels Basketball Club, Portarlington, Co Offaly, Ireland"
         />
         <meta
           name="keywords"

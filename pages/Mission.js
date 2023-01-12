@@ -12,14 +12,17 @@ export default function Mission(props) {
   return (
     <div>
       <Head>
-        <title>Mission Statement Kestrels Basketball Club Portarlington, Laois, Ireland</title>
+        <title>
+          Mission Statement Kestrels Basketball Club Portarlington, Co Offaly,
+          Ireland
+        </title>
         <meta
           name="description"
           content="Kestrels Basketball Club, Portarlington, Laois, Ireland"
         />
         <meta
           name="keywords"
-          content="Kestrels Basketball Club, Basketball, Portarlington, Sports, Laois, Ireland"
+          content="Kestrels Basketball Club, Basketball, Portarlington, Sports, Co Offaly, Ireland"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
