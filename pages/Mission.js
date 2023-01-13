@@ -13,7 +13,7 @@ export default function Mission(props) {
     <div>
       <Head>
         <title>
-          Mission Statement Kestrels Basketball Club Portarlington, Ireland
+          Mission Statement Kestrels Basketball Club Portarlington, Ireland.
         </title>
         <meta
           name="description"

@@ -13,7 +13,7 @@ export default function Constitution(props) {
     <div>
       <Head>
         <title>
-          Kestrels Basketball Club Constitution, Portarlington, Ireland
+          Kestrels Basketball Club Constitution, Portarlington, Ireland.
         </title>
         <meta
           name="description"

@@ -22,7 +22,7 @@ export default function Home(props) {
     <div>
       <Head>
         <title>
-          Kestrels Basketball Club Portarlington, Co Offaly, Ireland
+          Kestrels Basketball Club Portarlington, Co Offaly, Ireland.
         </title>
         <meta
           name="description"

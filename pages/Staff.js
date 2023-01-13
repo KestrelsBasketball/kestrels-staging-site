@@ -15,7 +15,7 @@ export default function Staff(props) {
       <Head>
         <title>
           Staff Members Kestrels Basketball Club Constitution, Portarlington,
-          Ireland
+          Ireland.
         </title>
         <meta
           name="description"
