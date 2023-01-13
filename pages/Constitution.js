@@ -13,15 +13,15 @@ export default function Constitution(props) {
     <div>
       <Head>
         <title>
-          Kestrels Basketball Club Constitution, Portarlington, Co Offaly, Ireland
+          Kestrels Basketball Club Constitution, Portarlington, Ireland
         </title>
         <meta
           name="description"
-          content="Kestrels Basketball Club, Portarlington, Co Offaly, Ireland"
+          content="Kestrels Basketball Club, Portarlington, Ireland"
         />
         <meta
           name="keywords"
-          content="Kestrels Basketball Club, Basketball, Portarlington, Sports, Co Offaly, Ireland"
+          content="Kestrels Basketball Club, Basketball, Portarlington, Sports, Ireland"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>

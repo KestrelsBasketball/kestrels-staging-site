@@ -15,15 +15,15 @@ export default function Staff(props) {
       <Head>
         <title>
           Staff Members Kestrels Basketball Club Constitution, Portarlington,
-          Co Offaly, Ireland
+          Ireland
         </title>
         <meta
           name="description"
-          content="Kestrel Staff Members. Kestrels Basketball Club, Portarlington, Offaly, Ireland"
+          content="Kestrel Staff Members. Kestrels Basketball Club, Portarlington, Ireland"
         />
         <meta
           name="keywords"
-          content="Kestrel Staff, Kestrels Basketball Club, Basketball, Portarlington, Sports, Laois, Ireland"
+          content="Kestrels Staff, Kestrels Basketball Club, Basketball, Portarlington, Sports, Ireland"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>

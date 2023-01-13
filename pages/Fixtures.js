@@ -16,12 +16,11 @@ export default function Fixtures(props) {
     <div>
       <Head>
         <title>
-          Latest Fixtures Kestrels Basketball Club Portarlington, Co Offaly,
-          Ireland
+          Latest Fixtures Kestrels Basketball Club Portarlington, Ireland
         </title>
         <meta
           name="description"
-          content="Kestrels Fixtures, Kestrels Basketball Club, Portarlington, Co Offaly, Ireland"
+          content="Kestrels Fixtures, Kestrels Basketball Club, Portarlington, Ireland"
         />
         <meta
           name="keywords"

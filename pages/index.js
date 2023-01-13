@@ -30,7 +30,7 @@ export default function Home(props) {
         />
         <meta
           name="keywords"
-          content="Kestrels Basketball Club, Basketball, Portarlington, Sports, Co Offaly, Ireland"
+          content="Kestrels Basketball Club, Basketball, Portarlington, Sports, Ireland"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
       </Head>
