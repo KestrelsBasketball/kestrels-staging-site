@@ -31,6 +31,10 @@ export default function Home(props) {
           content="Kestrels Basketball Club, Basketball, Portarlington, Sports, Ireland"
         ></meta>
         <link rel="icon" href="/favicon.ico" />
+        <meta
+          name="google-site-verification"
+          content="q2lkNsrw_lPBwwiBMGKqqQlrUSlLO4BFwby-JUMSqx8"
+        />
       </Head>
       <div>
         <DesktopHero />
