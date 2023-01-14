@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://kestrelsbasketballclub.ie
+
+# Sitemaps
+Sitemap: https://kestrelsbasketballclub.ie/sitemap.xml

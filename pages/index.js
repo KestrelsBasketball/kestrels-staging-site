@@ -24,7 +24,7 @@ export default function Home(props) {
         <title>Kestrels Basketball Club Portarlington, Ireland.</title>
         <meta
           name="description"
-          content="Kestrels Basketball Club, Portarlington, Laois, Ireland"
+          content="Kestrels Basketball Club, Portarlington, Laois, Ireland."
         />
         <meta
           name="keywords"
