@@ -123,7 +123,7 @@ export async function getStaticProps() {
   const { fixtures, sponsors } = await hygraph.request(
     `
     {
-      fixtures(orderBy: createdAt_DESC) 
+      fixtures(orderBy: createdAt_ASC) 
       {
         id
         teamA
