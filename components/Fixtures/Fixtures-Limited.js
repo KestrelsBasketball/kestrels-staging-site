@@ -51,7 +51,7 @@ export default function FixturesLimited(props) {
                       <div className={styles.game_details_container}>
                         <div>{fixtures.location}</div>
                         <div>
-                          {format(new Date(fixtures.date), "dd-LLL-yyyy")}
+                          {format(new Date(fixtures.date), "do-LLL-yyyy")}
                         </div>
                         <div>{fixtures.time}</div>
                       </div>
@@ -98,7 +98,7 @@ export default function FixturesLimited(props) {
                       <h4>{fixtures.location}</h4>
                     </div>
                     <div>
-                      <h5>{format(new Date(fixtures.date), "qo MMM, yyyy")}</h5>
+                      <h5>{format(new Date(fixtures.date), "do-LLL-yyyy")}</h5>
                     </div>
                     <div>
                       <h6>{fixtures.time}</h6>

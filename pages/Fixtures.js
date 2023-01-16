@@ -58,7 +58,7 @@ export default function Fixtures(props) {
                     <h6>{fixtures.location}</h6>
                   </div>
                   <div>
-                    <h6>{format(new Date(fixtures.date), "dd-LLL-yyyy")}</h6>
+                    <h6>{format(new Date(fixtures.date), "do-LLL-yyyy")}</h6>
                   </div>
                   <div>
                     <h6>{fixtures.time}</h6>
@@ -94,7 +94,7 @@ export default function Fixtures(props) {
                     <h4>{fixtures.location}</h4>
                   </div>
                   <div>
-                    <h5>{format(new Date(fixtures.date), "dd-LLL-yyyy")}</h5>
+                    <h5>{format(new Date(fixtures.date), "do-LLL-yyyy")}</h5>
                   </div>
                   <div>
                     <h4>{fixtures.time}</h4>
