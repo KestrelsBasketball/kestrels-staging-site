@@ -24,7 +24,7 @@ export default function Home(props) {
         <title>Kestrels Basketball Club Portarlington, Ireland.</title>
         <meta
           name="description"
-          content="Kestrels Basketball Club, Portarlington, Laois, Ireland."
+          content="Kestrels Basketball Club, Portarlington, Co Laois, Ireland."
         />
         <meta
           name="keywords"
@@ -68,7 +68,7 @@ export async function getStaticProps() {
   const { fixtures, result, sponsors } = await hygraph.request(
     `
     {
-      fixtures (first: 3 orderBy: createdAt_DESC) {
+      fixtures (first: 3 orderBy: createdAt_ASC) {
         id
         teamA
         teamB
@@ -77,7 +77,7 @@ export async function getStaticProps() {
         date
         time
       }
-      result (first: 3 orderBy: createdAt_DESC) {
+      result (first: 3 orderBy: createdAt_ASC) {
         id
         teamA
         teamAScore
