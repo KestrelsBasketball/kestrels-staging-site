@@ -31,13 +31,13 @@ export default function History() {
                   ever since, with 180 members at present.
                 </h5>
                 <p>
-                  Kestrels Basketball Club currently has teams from U8's up to U18's for both boys
-                  and girls and also has a Senior Men's Team.  Kestrels Basketball Club compete
+                  Kestrels Basketball Club currently has teams from U8s up to U18s for both boys
+                  and girls and also has a Senior Mens Team.  Kestrels Basketball Club compete
                   in the Midlands League competition.
                 </p>
                 <p>
                   Anyone interested in becoming a member of any of the teams,
-                  from U8's to Senior Level are invited to get in contact with our
+                  from U8s to Senior Level are invited to get in contact with our
                   Head Coach Louise Foster on 087 6134057.
                 </p>
               </div>
