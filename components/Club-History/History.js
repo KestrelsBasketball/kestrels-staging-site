@@ -27,19 +27,18 @@ export default function History() {
               <div className={styles.text_content_styles}>
                 <h2>About Kestrels Basketball Club</h2>
                 <h5>
-                  Kestrels was founded in 2007 and has been growing steadily
+                  Kestrels Basketball Club, Portarlington Co. Laois was founded in 2007 and has been growing steadily
                   ever since, with 180 members at present.
                 </h5>
                 <p>
-                  Kestrels currently has teams from U8s up to U20s for both boys
-                  and girls, as well as a senior ladies team. Kestrels compete
-                  in the Midlands League competition, and we currently have our
-                  U17 and our U20 boys competing in the Dublin League.
+                  Kestrels Basketball Club currently has teams from U8's up to U18's for both boys
+                  and girls and also has a Senior Men's Team.  Kestrels Basketball Club compete
+                  in the Midlands League competition.
                 </p>
                 <p>
                   Anyone interested in becoming a member of any of the teams,
-                  from U8 to senior level are invited to get in contact with our
-                  Head Coach.
+                  from U8's to Senior Level are invited to get in contact with our
+                  Head Coach Louise Foster on 087 6134057.
                 </p>
               </div>
             </div>
