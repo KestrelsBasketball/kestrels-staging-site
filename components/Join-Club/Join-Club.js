@@ -12,8 +12,8 @@ export default function JoinClub() {
             Join <span>the </span>Club
           </h3>
           <p>
-            Anyone interested in becoming a member of any of the teams contact
-            the Head Coach
+            Anyone interested in becoming a member of any of the teams please contact
+            the Head Coach Louise Foster on 087 6134057.
           </p>
         </div>
         <div className={styles.join_btn_container}></div>
